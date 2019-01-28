@@ -1,7 +1,7 @@
 Opis Game JSON datoteke
 =====================
 
-V tem dokumentu so opisani objekti v datoteki JSON, ki opisuje trenutno stanje igre. Primer celotne datoteke je v `web/game_example.json`.
+V tem dokumentu so opisani objekti v datoteki JSON, ki opisuje trenutno stanje igre. Primer celotne datoteke je v `game.json`.
 
 Igra
 ----
