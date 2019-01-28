@@ -62,3 +62,11 @@ Sledilnik objektov nadzorujemo s pomočjo tipk. Na voljo so sledeči ukazi:
 * ``c`` - Vklopi možnost urejanja točk ekip, ki tekmujejo. Levi klik na košaro ekipe poveča število točk za ena, desni klik na košaro ekipe pa število točk zmanjša za ena. Urejanje izklopimo s ponovnim pritiskom na tipko ``c``.
 * ``q`` - Zapre sledilnik objektov.
 
+![image](https://github.com/RoboLiga/roboliga-meta/blob/master/Tehnicna-dokumentacija/Tracker.PNG)
+
+## Komunikacija z robotom
+
+Robot sprejema podatke o stanju na poligonu preko enostavnega spletnega strežnika, ki servira datoteko ``game.json``. Ta datoteka vsebuje opis poligona in objektov na njemu v formatu JSON. Opis datoteke se nahaja v dokumentu [url](https://github.com/RoboLiga/roboliga-meta/blob/master/Tehnicna-dokumentacija/game.md)
+
+
+
