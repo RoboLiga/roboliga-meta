@@ -46,7 +46,7 @@ Igrišče
 }
 ```
 
-Igrišče je objekt sestavljen iz koordinat vogalov: `topLeft`, `topRight`, `bottomLeft` in `bottomRight`, ter objekta `baskets`, ki vsebuje opisa košar obeh ekip `team1` in `team2`.
+Igrišče je objekt sestavljen iz koordinat vogalov: `topLeft`, `topRight`, `bottomLeft` in `bottomRight`, ter objekta `baskets`, ki vsebuje opisa košar obeh ekip `team1` in `team2`. Preko koordinat vogalov je določeno izhodišče koordinatnega sistema ter orientacija igrišča v njem.
 
 Košara
 ------
@@ -67,11 +67,11 @@ Robot
 {
   "id": 13,
   "position": [15, 8],
-  "orientation": 10
+  "direction": 10
 }
 ```
 
-Robot je objekt sestavljen iz identifikatorja ArUco `id`, pozicije na igralnem polju `position` (v milimetrih) in azimutne orientacije `orientation` (v stopinjah).
+Robot je objekt sestavljen iz identifikatorja ArUco `id`, pozicije na igralnem polju `position` (v milimetrih) in azimutne orientacije `direction` (v stopinjah) na območju [-180, 180].
 
 Jabolko
 -------
