@@ -66,7 +66,7 @@ Sledilnik objektov nadzorujemo s pomočjo tipk. Na voljo so sledeči ukazi:
 
 ## Komunikacija z robotom
 
-Robot sprejema podatke o stanju na poligonu preko enostavnega spletnega strežnika, ki servira datoteko ``game.json``. Ta datoteka vsebuje opis poligona in objektov na njemu v formatu JSON. Opis datoteke se nahaja na [link](https://github.com/RoboLiga/roboliga-meta/blob/master/Tehnicna-dokumentacija/game.md).
+Robot sprejema podatke o stanju na poligonu preko enostavnega spletnega strežnika, ki servira datoteko ``game.json``, ki jo neprestano osvežuje sledilnik objektov. Ta datoteka vsebuje opis poligona in objektov na njemu v formatu JSON. Opis datoteke se nahaja na [link](https://github.com/RoboLiga/roboliga-meta/blob/master/Tehnicna-dokumentacija/game.md).
 
 
 
