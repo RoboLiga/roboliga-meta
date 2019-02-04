@@ -1,7 +1,7 @@
 Opis Game JSON datoteke
 =====================
 
-V tem dokumentu so opisani objekti v datoteki JSON, ki opisuje trenutno stanje igre. Primer celotne datoteke je v `game.json`.
+V tem dokumentu so opisani objekti v datoteki JSON, ki opisuje trenutno stanje igre. Primer celotne datoteke je v `game.json`. Vrednosti posameznih atributov so zgolj informativne narave.
 
 Igra
 ----
@@ -24,7 +24,7 @@ Ekipa
 ```
 {
   "id": 13,
-  "name": "Drugi team",
+  "name": "Ekipa-da-te-skipa",
   "score": 2
 }
 ```
@@ -35,10 +35,10 @@ Igrišče
 -------------
 ```
 {
-  "topLeft": [10, 2],
-  "topRight": [150, 2],
-  "bottomLeft": [10, 50],
-  "bottomRight": [150, 50],
+  "topLeft": [0, 2055],
+  "topRight": [3555, 2055],
+  "bottomLeft": [0, 0],
+  "bottomRight": [3555, 0],
   "baskets": {
     "team1": <Košara>, 
     "team2": <Košara>
@@ -46,16 +46,16 @@ Igrišče
 }
 ```
 
-Igrišče je objekt sestavljen iz koordinat vogalov: `topLeft`, `topRight`, `bottomLeft` in `bottomRight`, ter objekta `baskets`, ki vsebuje opisa košar obeh ekip `team1` in `team2`. Preko koordinat vogalov je določeno izhodišče koordinatnega sistema ter orientacija igrišča v njem.
+Igrišče je objekt sestavljen iz koordinat vogalov (v milimetrih): `topLeft`, `topRight`, `bottomLeft` in `bottomRight`, ter objekta `baskets`, ki vsebuje opisa košar obeh ekip `team1` in `team2`. Preko koordinat vogalov je določeno izhodišče koordinatnega sistema ter orientacija igrišča v njem.
 
 Košara
 ------
 ```
 {
-  "topLeft": [10, 10],
-  "topRight": [20, 10],
-  "bottomLeft": [10, 40],
-  "bottomRight": [20, 40]
+  "topLeft": [0, 1520],
+  "topRight": [510, 1520],
+  "bottomLeft": [0, 530],
+  "bottomRight": [510, 530]
 }
 ```
 
@@ -66,7 +66,7 @@ Robot
 ```
 {
   "id": 13,
-  "position": [15, 8],
+  "position": [150, 80],
   "direction": 10
 }
 ```
@@ -78,7 +78,7 @@ Jabolko
 ```
 {
   "type": "appleGood",
-  "position": [10, 5]
+  "position": [1000, 500]
 }
 ```
 
