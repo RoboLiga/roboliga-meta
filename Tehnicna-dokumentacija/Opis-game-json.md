@@ -84,4 +84,4 @@ Jabolko
 }
 ```
 
-Jabolko je objekt sestavljen iz identifikatorja ArUco, opisa tipa `type`, ki je lahko `appleGood` za zdravo jabolko in `appleBad` za gnilo, in pozicije na igralnem polju `position` (v milimetrih) ter azimutne orientacije `direction` (v stopinjah) na območju [-180, 180].
+Jabolko je objekt sestavljen iz identifikatorja ArUco `id`, opisa tipa `type`, ki je lahko `appleGood` za zdravo jabolko in `appleBad` za gnilo, in pozicije na igralnem polju `position` (v milimetrih) ter azimutne orientacije `direction` (v stopinjah) na območju [-180, 180].
