@@ -12,13 +12,24 @@ Delovanje sledilnika objektov nastavljate z urejanjem konfiguracijskih datotek, 
 ```json
 {
     "teams": {
-        "10": "Ekipa 1",
-        "1": "Ekipa 2",
-        "46": "Ekipa 3"
+        "-1": "",
+         "0": "Super Glavce",
+         "5": "GAYA",
+        "12": "Distopija",
+        "18": "Noteblock gang",
+        "19": "Hugs for Bugs",
+        "25": "KROBOD",
+        "32": "BetterBot",
+        "33": "Bionic Farmers",
+        "35": "TrijeMaliKlinci",
+        "39": "Pršut in teran",
+        "41": "Deep Thought",
+        "44": "( ͡° ͜ʖ ͡°)"
+		
     },
     "currentGameTeams": {
-        "Team1": 10,
-        "Team2": 1
+        "Team1": -1,
+        "Team2": -1
     },
     "gameTime": 100,
     "goodApple": 1,
