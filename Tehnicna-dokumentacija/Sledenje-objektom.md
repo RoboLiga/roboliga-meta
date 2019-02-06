@@ -36,6 +36,8 @@ Delovanje sledilnika objektov nastavljate z urejanjem konfiguracijskih datotek, 
     "badApple": -2
 }
 ```
+Ob spremembi datoteke `gameData.json` je potrebno ponovno naložiti konfiguracijo s pritiskom na tipko `l`.
+
 
 * Nastavitve sledilnika urejate preko datoteke ``Resources.py``:  
   Večina nastavitev v tej datoteki je fiksna. Za uporabnike je smiselno le nastavljanje poti do datotek in video izvora.
@@ -52,11 +54,9 @@ class ResFileNames:
     gameLiveDataFileName = "../nginx/html/game.json"
     gameLiveDataTempFileName = "gameLiveTemp.json"
     mapConfigFileName = "mapConfig"
-    #videoSource = "rtsp://193.2.72.149/axis-media/media.amp"
     videoSource="http://193.2.72.149/mjpg/video.mjpg"
 ```
-  
-Ob spremembi konfiguracijskih datotek je potrebno sledilnik objektov ponovno zagnati, da se spremembe uveljavijo.
+Ob spremembi datoteke `Resources.py` je potrebno sledilnik objektov ponovno zagnati.
 
 
 ## Zagon
