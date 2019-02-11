@@ -54,7 +54,7 @@ class ResFileNames:
     gameLiveDataFileName = "../nginx/html/game.json"
     gameLiveDataTempFileName = "gameLiveTemp.json"
     mapConfigFileName = "mapConfig"
-    videoSource="http://193.2.72.149/mjpg/video.mjpg"
+    videoSource="http://192.168.0.2/mjpg/video.mjpg"
 ```
 Ob spremembi datoteke `Resources.py` je potrebno sledilnik objektov ponovno zagnati.
 
