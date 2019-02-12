@@ -29,8 +29,8 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 | **Kdaj?** | **Kaj?** |
 | --- | --- |
 | 18. 1. 2019 | konec zbiranja prijav |
-| 30. 1. 2019 ob 12:30 v P04 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
-| V tednu 18. - 22. 2. 2019 | 1. uradni trening (R2.38) |
+| 30. 1. 2019 ob 12:30 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
+| 21. 2. 2019 ob 14:00 | 1. uradni trening (R2.38) |
 | V tednu 4. - 8. 3. 2019 | 2. uradni trening (R2.38) |
 | 13. 3. 2019 | zaključno tekmovanje (avla FRI) |
 
