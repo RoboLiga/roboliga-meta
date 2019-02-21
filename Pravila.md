@@ -45,7 +45,8 @@ Sadovnjak je ravno območje, po katerem se lahko gibljejo roboti - nabiralci. Se
 - Košari za nabiranje jabolk:
   - postavljeni na robovih poligona
   - modre oziroma rdeče barve
-  - velikost košare: 1 m x 0,5 m.
+  - velikost košare: približno 1 m x 0,5 m,
+  - štirikotnik, ki definira območje košare, je določen v nastavitvah sledilnika.
 
 ![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
 
@@ -79,7 +80,11 @@ Tekma je dvoboj med dvema nabiralcema. Njun cilj je v omejenem času zbrati čim
 - Trajanje tekme: do 3 minute
 - Pridobivanje točk:
   - vsako zdravo jabolko, ki se pojavi v košari, nabiralcu prinese 1 točko,
-  - vsako gnilo jabolko v košari nabiralcu odšteje 2 točki.
+  - vsako gnilo jabolko v košari nabiralcu odšteje 2 točki,
+  - da je jabolko v košari, štejemo takrat, ko je središče njegove oznake znotraj košare,
+  - v primeru, da sledilnik ne prepozna oznake jabolka, o točkovanju odloča sodnik. Primeri:
+    - jabolko je prevrnjeno in njegova oznaka ni več vidna,
+    - oznaka jabolka je prekrita z drugim objektom.
 - Zmagovalec je tisti nabiralec, ki ima po izteku časa več točk. V primeru izenačenega števila točk, zmaga tisti, ki ima več zdravih jabolk. V primeru, da je tudi število zdravih jabolkov izenačeno, zmaga tisti, ki je prej v svojo košaro prinesel zadnje zdravo jabolko.
 - Sodnik sproti odstranjuje zdrava jabolka iz košare, pri čemer gnilih ne in jih lahko robot premika po sadovnjaku do konca tekme.
 - Robotu se je dovoljeno premikati po vsej površini sadovnjaka, vključno s košarama.
