@@ -67,11 +67,13 @@ Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napiše
 - Izdelan robot lahko vsebuje eno programirljivo kocko, največ tri motorje in največ štiri tipala. Dovoljene vrste tipal so: barvno/svetlobno, ultrazvočno, žiroskop in tipalo za dotik.
 - Največja dovoljena velikost gum je 56 mm x 26 mm.
 - Robot lahko na začetku tekme meri največ 30 cm x 30 cm x 30 cm.
-- Robot mora imeti na vrhu prostor za namestitev označbe, ki bo vidna za kamero.
+- Robot mora imeti na vrhu prostor za namestitev označbe, ki bo vidna kameri.
 - Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
 - Med tekmo lahko robota prime samo sodnik.
 - Predvidoma bosta hkrati v eni tekmi tekmovala dva robota.
+- Na začetku tekme bodo sodniki postavili nabiralca tako, da bo središče njegove oznake sovpadalo s središčem notranjega daljšega roba njegove košare.
 - V času tekme je dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
+- Pred tekmo lahko program na robotu zaženete samo preko tipk na kocki in ne oddaljeno preko SSH.
 
 ## Tekma
 
