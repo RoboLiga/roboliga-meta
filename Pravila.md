@@ -31,8 +31,8 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 | 18. 1. 2019 | konec zbiranja prijav |
 | 30. 1. 2019 ob 12:30 v P04 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
 | 21. 2. 2019 ob 14:00 v R2.38 | 1. uradni trening (testni poligon) |
-| V tednu 4. - 8. 3. 2019 v R2.38 | 2. uradni trening (testni poligon) |
-| 13. 3. 2019 | zaključno tekmovanje (avla FRI) |
+| 7. 3. 2019 ob 14:15 v R2.38 | 2. uradni trening (testni poligon) |
+| 13. 3. 2019 ob 14:00 v avli FRI | zaključno tekmovanje |
 
 ## Sestavni deli izziva
 
@@ -71,9 +71,9 @@ Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napiše
 - Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
 - Med tekmo lahko robota prime samo sodnik.
 - Predvidoma bosta hkrati v eni tekmi tekmovala dva robota.
-- Na začetku tekme bodo sodniki postavili nabiralca tako, da bo središče njegove oznake sovpadalo s središčem notranjega daljšega roba njegove košare.
+- Na začetku tekme bodo sodniki postavili nabiralca tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegove košare, ki gleda proti sredini poligona. Nabiralec bo tako sceloma v svoji košari in približno usredinjen glede na daljši rob košare.
 - V času tekme je dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
-- Pred tekmo lahko program na robotu zaženete samo preko tipk na kocki in ne oddaljeno preko SSH.
+- Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
@@ -105,7 +105,7 @@ Predvidoma bo tekmovanje sestavljeno iz dveh delov. V prvem bodo ekipe razdeljen
 
 - Sodnik ima absolutno diskrecijsko pravico.
 - Sodnik lahko prekine tekmo, če presodi, da se stanje točk ne bo spremenilo (npr. oba robota obtičita, se sploh ne odzivata, tekmovalci vdrejo na poligon ipd.).
-- Sodnik lahko po presoji in v dogovoru z ekipo premakne njenega robota v začetni položaj.
+- Sodnik lahko na prošnjo člana ekipe premakne njenega robota v začetni položaj (ponastavitev). Vsaka ekipa lahko zaprosi za ponastavitev robota največ 2-krat na tekmo. To stori tako, da član ekipe sodniku zavpije "Reset!". Če sta nabiralca obeh tekmujočih ekip zapletena, je prošnja po ponastavitvi ugodena samo ob strinjanju obeh ekip. Izjema: če je ena od obeh ekip že porabila vse možnosti za ponastavitev nabiralca, se v primeru medsebojnega zapleta druga ekipa sama odloča glede ponastavitve svojega robota. Ponastavita se oba nabiralca. 
 
 ## Testni poligon
 
