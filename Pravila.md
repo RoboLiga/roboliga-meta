@@ -3,13 +3,15 @@ Pravila
 
 ## Zgodba
 
-Pomlad 2018 je bila posebej topla in čebele so pridno opraševale drevesa, zato so sadovnjaki nenavadno bogato obrodili. Prišel je čas za obiranje in stari oče, ki pri svoji starosti ni več mogel plezati po drevju, je sinovoma, Janezu in Francu, obljubil, da bo svoj sadovnjak zapustil tistemu, ki bo nabral več jabolk. Zaradi rasti cen nepremičnin se je ponudba obema zdela zelo mamljiva.
+(Pretekle dogodivščine Janeza in Franca lahko najdete v [lanskih pravilih](https://github.com/RoboLiga/roboliga-meta/blob/20182019/Pravila.md).)
 
-Kar sta bila Janez in Franc pogosto istih misli, sta oba prišla na idejo, da bosta splezala na drevesa in jabolka sklatila na tla, s tal pa jih bodo pobrali najeti pobiralci. Žal jima jo je zagodla nizka brezposelnost, zato si pobiralcev nista mogla privoščiti. Še vedno istih misli pa sta oba prišla do zaključka, da bi to delo lahko opravljali roboti.
+Prišlo je poletje 2019 in sadovnjaki so samevali. Le redko-katera veja se je šibila pod težo sadja. Roboti so hitro pobrali ubogi pridelek in še  preden bi lahko oče sadovnjak predal enemu od sinov, je k njemu prišla multinacionalka, ki je tam hotela postaviti tovarno. Za kmetijsko zemljišče mu je ponudila trikratnik vrednosti v registru nepremičnin na portalu E-prostor Geodetske uprave Republike Slovenije.
 
-Hitro sta napravila vsak svojega robota in pričela s pobiranjem. Oba robota sta v košari vsakega od bratov kmalu nabrala odlikovanja vredne količine jabolk. Ker pa v svoji ihti v robota nista uspela vprogramirati moralnih vrednot, sta se ta kmalu naučila, da lahko gnila jabolka podtakneta eden drugemu in, ker eno gnilo jabolko lahko uniči celo košaro, tako tekmecu ogrozita zmago.
+Rešitev je bila sedaj preprosta: vsak od sinov je lahko dobil polovico denarja. Vendar sta kmalu ugotovila, da denar ni vse in da bogastvo s seboj prinese dolžnosti do družbe in socialnega okolja.
 
-Po dolgem boju je bilo v obeh košarah enako število lepih, zdravih, jabolk, zato se je stari oče odločil, da to leto svojega posestva še ne bo predal. V pripravi na naslednjo sezono sta se Janez in Franc odločila, da pomoč pri gradnji in programiranju robotov poiščeta drugje: pri vas.
+Da bi poskrbela, da se podobna katastrofa ne bi pripetila še drugim in bi hkrati očistila svojo vest, ker sta v svojo vas pripeljala velikega onesnaževalca, sta se sinova Janez in Franc odločila, da bosta postala čebelarja. Tako bosta lahko svoje čebele vozila v sadovnjake na pašo, kjer bodo oprašile drevesa, v zameno pa bosta dobila med.
+
+Med je seveda boljši, če ga čebele naberejo na bolj eksotičnih rastlinah, zato sta Janez in Franc naročnike začela iskati čim dlje stran od doma. Ker pa stari oče potrebuje skrb svojih sinov, ne moreta biti dolgo zdoma, zato sta se odločila, da bosta svoje panje naredila samo-vozeče. In tako pomoč spet iščeta pri najboljših izdelovalcih samostojnih robotov - pri vas.
 
 ## Opis izziva
 
