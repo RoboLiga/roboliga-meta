@@ -15,7 +15,7 @@ Med je seveda boljši, če ga čebele naberejo na bolj eksotičnih rastlinah, za
 
 ## Opis izziva
 
-Vsaka ekipa sestavi svojega avtonomnega robota – nabiralca. Roboti tekmujejo na poligonu, ki predstavlja sadovnjak. Na njem se nahajajo jabolka, ki so lahko zdrava ali gnila, in dve shrambi. Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v omejenem času v svojo shrambo prineseta čim več zdravih jabolk in poskrbita, da je v njej čim manj gnilih. Robota navigirata po sadovnjaku s pomočjo podatkov, ki jim jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje v sadovnjaku s pomočjo kamere nameščene nad njim.
+Vsaka ekipa sestavi svojega avtonomnega robota – prenašalca panjev. Roboti tekmujejo na poligonu, ki predstavlja polja in sadovnjake. Na njem se nahajajo kanji, ki so lahko zdravi ali bolni, in dve skladišči. Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v omejenem času v svoje skladišče prineseta čim več zdravih panjev in poskrbita, da je v njej čim manj bolnih. Robota navigirata po svetu s pomočjo podatkov, ki jim jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
 
 ## Potrebna znanja in veščine
 
@@ -38,30 +38,33 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 
 ## Sestavni deli izziva
 
-### Sadovnjak
+### Poligon
 
-Sadovnjak je ravno območje, po katerem se lahko gibljejo roboti - nabiralci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta označeni barvni območji, ki predstavljata nabiralni košari.
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - prenašalci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta označeni barvni območji, ki predstavljata skladišča, in cone za bogatenje panjev.
 
 - Velikost:  2 m x 3,5 m
 - Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju.
-- Košari za nabiranje jabolk:
+- Skladišča za panje:
   - postavljeni na robovih poligona
   - modre oziroma rdeče barve
-  - velikost košare: približno 1 m x 0,5 m,
-  - štirikotnik, ki definira območje košare, je določen v nastavitvah sledilnika.
+  - velikost skladišča: približno 1 m x 0,5 m,
+  - štirikotnik, ki definira območje skladišča, je določen v nastavitvah sledilnika.
+- Cone za bogatenje:
+  - obdajajo skladišče na nasprotni strani poligona
+  - vsak robot ima domačo in nasprotno cono
 
 ![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
 
       
-### Jabolka
+### Panji
 
-Na površini sadovnjaka se nahajajo jabolka, ki so predstavljena z lesenimi kvadri:
+Na površini poligona se nahajajo panji, ki so predstavljena z lesenimi kvadri:
 
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 - na vrhu je oznaka za kamero,
-- barva zdravih jabolk je zelena, gnilih pa rjava.
+- barva zdravih panjev je zelena, bolnih pa rjava.
 
-### Robot nabiralec
+### Robot prenašalec
 
 Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
 
@@ -73,25 +76,28 @@ Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napiše
 - Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
 - Med tekmo lahko robota prime samo sodnik.
 - Predvidoma bosta hkrati v eni tekmi tekmovala dva robota.
-- Na začetku tekme bodo sodniki postavili nabiralca tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegove košare, ki gleda proti sredini poligona. Nabiralec bo tako sceloma v svoji košari in približno usredinjen glede na daljši rob košare.
+- Na začetku tekme bodo sodniki postavili prenašalca tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega skladišča, ki gleda proti sredini poligona. Prenašalec bo tako sceloma v svojem skladišču in približno usredinjen glede na daljši rob skladišča.
 - V času tekme je dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
 - Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
-Tekma je dvoboj med dvema nabiralcema. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva z nabiranjem zdravih jabolk v svojo košaro, gnila jabolka v košari pa pomenijo negativne točke.
+Tekma je dvoboj med dvema prenašalcema. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s prenašanjem in vračanjem poanjev v svoje skladišče, bolni panji v skladišču pa pomenijo negativne točke.
 
 - Trajanje tekme: do 3 minute
 - Pridobivanje točk:
-  - vsako zdravo jabolko, ki se pojavi v košari, nabiralcu prinese 1 točko,
-  - vsako gnilo jabolko v košari nabiralcu odšteje 2 točki,
-  - da je jabolko v košari, štejemo takrat, ko je središče njegove oznake znotraj košare,
-  - v primeru, da sledilnik ne prepozna oznake jabolka, o točkovanju odloča sodnik. Primeri:
-    - jabolko je prevrnjeno in njegova oznaka ni več vidna,
-    - oznaka jabolka je prekrita z drugim objektom.
-- Zmagovalec je tisti nabiralec, ki ima po izteku časa več točk. V primeru izenačenega števila točk, zmaga tisti, ki ima več zdravih jabolk. V primeru, da je tudi število zdravih jabolkov izenačeno, zmaga tisti, ki je prej v svojo košaro prinesel zadnje zdravo jabolko.
-- Sodnik sproti odstranjuje zdrava jabolka iz košare, pri čemer gnilih ne in jih lahko robot premika po sadovnjaku do konca tekme.
-- Robotu se je dovoljeno premikati po vsej površini sadovnjaka, vključno s košarama.
+  - vsak zdrav panj, ki se pojavi v košari, nabiralcu prinese točke, odvisno od tega kako deleč je bil,
+    - panj, ki ni bil dlje kot v domači coni je vreden 1 točko
+    - panj, ki je bil izven domače cone, ne pa v nasprotni coni je vreden 2 točki
+    - panj, ki je bil v nasprotni coni je vreden 3 točke
+  - vsak bolan panj v skladišču odšteje 2 točki,
+  - da je panj v skladišču, štejemo takrat, ko je središče njegove oznake znotraj košare,
+  - v primeru, da sledilnik ne prepozna oznake panja, o točkovanju odloča sodnik. Primeri:
+    - panj je prevrnjen in njegova oznaka ni več vidna,
+    - oznaka panja je prekrita z drugim objektom.
+- Zmagovalec je tisti nabiralec, ki ima po izteku časa več točk. V primeru izenačenega števila točk, zmaga tisti, ki ima več zdravih panjev. V primeru, da je tudi število zdravih panjev izenačeno, zmaga tisti, ki je prej v svojo košaro prinesel zadnji zdrav panj.
+- Sodnik sproti odstranjuje zdrave panje iz skladišč, pri čemer bolnih ne in jih lahko robot premika po poligonu do konca tekme.
+- Robotu se je dovoljeno premikati po vsej površini poligona, vključno s skladiščema.
 - Protokol tekme:
   - priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni položaj. Robota morata biti prižgana in povezana na strežnik.
   - začetek tekme: strežnik oznani začetek tekme z zastavico v podatkih o tekmi.
@@ -99,7 +105,7 @@ Tekma je dvoboj med dvema nabiralcema. Njun cilj je v omejenem času zbrati čim
     - pretek časa,
     - diskvalifikacija obeh robotov,
     - po presoji sodnika.
-- Če se robot začne premikati pred začetkom tekme, tekma razveljavi in se vrnemo v pripravo na tekmo. Če robot to stori dvakrat v sklopu iste tekme, je diskvalificiran in tekma se ponovi samo za preostalega robota.
+- Če se robot začne premikati pred začetkom tekme, se tekma razveljavi in se vrnemo v pripravo na tekmo. Če robot to stori dvakrat v sklopu iste tekme, je diskvalificiran in tekma se ponovi samo za preostalega robota.
 
 Predvidoma bo tekmovanje sestavljeno iz dveh delov. V prvem bodo ekipe razdeljene v skupine, dvoboji pa bodo potekali po načelu vsak z vsakim. Najvišje uvrščene ekipe glede na število točk se potem pomerijo še v izločilnih bojih. Začetni tekmovalni pari izločilnih bojev se določijo glede na izkupiček točk skupinskega dela.
 
@@ -107,7 +113,7 @@ Predvidoma bo tekmovanje sestavljeno iz dveh delov. V prvem bodo ekipe razdeljen
 
 - Sodnik ima absolutno diskrecijsko pravico.
 - Sodnik lahko prekine tekmo, če presodi, da se stanje točk ne bo spremenilo (npr. oba robota obtičita, se sploh ne odzivata, tekmovalci vdrejo na poligon ipd.).
-- Sodnik lahko na prošnjo člana ekipe premakne njenega robota v začetni položaj (ponastavitev). Vsaka ekipa lahko zaprosi za ponastavitev robota največ 2-krat na tekmo. To stori tako, da član ekipe sodniku zavpije "Reset!". Če sta nabiralca obeh tekmujočih ekip zapletena, je prošnja po ponastavitvi ugodena samo ob strinjanju obeh ekip. Izjema: če je ena od obeh ekip že porabila vse možnosti za ponastavitev nabiralca, se v primeru medsebojnega zapleta druga ekipa sama odloča glede ponastavitve svojega robota. Ponastavita se oba nabiralca. 
+- Sodnik lahko na prošnjo člana ekipe premakne njenega robota v začetni položaj (ponastavitev). Vsaka ekipa lahko zaprosi za ponastavitev robota največ 2-krat na tekmo. To stori tako, da član ekipe sodniku zavpije "Reset!". Če sta nabiralca obeh tekmujočih ekip zapletena, sodnik po svoji presoji ponastavi oba robota.
 
 ## Testni poligon
 
