@@ -15,7 +15,7 @@ Med je seveda boljši, če ga čebele naberejo na bolj eksotičnih rastlinah, za
 
 ## Opis izziva
 
-Vsaka ekipa sestavi svojega avtonomnega robota – prenašalca panjev. Roboti tekmujejo na poligonu, ki predstavlja polja in sadovnjake. Na njem se nahajajo kanji, ki so lahko zdravi ali bolni, in dve skladišči. Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v omejenem času v svoje skladišče prineseta čim več zdravih panjev in poskrbita, da je v njej čim manj bolnih. Robota navigirata po svetu s pomočjo podatkov, ki jim jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
+Vsaka ekipa sestavi svojega avtonomnega robota – prenašalca čebeljih panjev. Roboti tekmujejo na poligonu, ki predstavlja polja in sadovnjake. Na njem se nahajajo panji, ki so lahko zdravi ali bolni, in dve skladišči. Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v omejenem času v svoje skladišče prineseta čim več zdravih panjev in poskrbita, da je v njem čim manj bolnih. Robota navigirata po poligonu s pomočjo podatkov, ki jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
 
 ## Potrebna znanja in veščine
 
@@ -24,7 +24,7 @@ Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja lego k
 Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
 
 1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu. Tekmovalci bodo imeli na razpolago podrobno tehnično dokumentacijo in primere programske kode v jeziku Python.
-2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal iz strežnika.
+2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika.
 
 ## Časovnica
 
@@ -40,7 +40,7 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 
 ### Poligon
 
-Poligon je ravno območje, po katerem se lahko gibljejo roboti - prenašalci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta označeni barvni območji, ki predstavljata skladišča, in cone za bogatenje panjev.
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - prenašalci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta označeni barvni območji, ki predstavljata skladišči, in cone za bogatenje panjev - to so območja z najbolj eksotično pašo za čebele.
 
 - Velikost:  2 m x 3,5 m
 - Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju.
@@ -50,15 +50,16 @@ Poligon je ravno območje, po katerem se lahko gibljejo roboti - prenašalci. Se
   - velikost skladišča: približno 1 m x 0,5 m,
   - štirikotnik, ki definira območje skladišča, je določen v nastavitvah sledilnika.
 - Cone za bogatenje:
-  - obdajajo skladišče na nasprotni strani poligona
-  - vsak robot ima domačo in nasprotno cono
+  - obdajajo skladišče na nasprotni strani poligona,
+  - vsak robot ima domačo in nasprotno cono,
+  - modre oziroma rdeče barve.
 
 ![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
 
       
 ### Panji
 
-Na površini poligona se nahajajo panji, ki so predstavljena z lesenimi kvadri:
+Na površini poligona se nahajajo panji, ki so predstavljeni z lesenimi kvadri:
 
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 - na vrhu je oznaka za kamero,
@@ -75,14 +76,14 @@ Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napiše
 - Robot mora imeti na vrhu prostor za namestitev označbe, ki bo vidna kameri.
 - Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
 - Med tekmo lahko robota prime samo sodnik.
-- Predvidoma bosta hkrati v eni tekmi tekmovala dva robota.
+- Hkrati bosta v eni tekmi tekmovala dva robota.
 - Na začetku tekme bodo sodniki postavili prenašalca tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega skladišča, ki gleda proti sredini poligona. Prenašalec bo tako sceloma v svojem skladišču in približno usredinjen glede na daljši rob skladišča.
 - V času tekme je dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
 - Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
-Tekma je dvoboj med dvema prenašalcema. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s prenašanjem in vračanjem poanjev v svoje skladišče, bolni panji v skladišču pa pomenijo negativne točke.
+Tekma je dvoboj med dvema prenašalcema. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s prenašanjem in vračanjem panjev v svoje skladišče, bolni panji v skladišču pa pomenijo negativne točke.
 
 - Trajanje tekme: do 3 minute
 - Pridobivanje točk:
