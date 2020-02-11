@@ -1,157 +1,210 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://roboliga.raptorpond.com/game.json",
-  "title": "Game",
-  "description": "Describes the game state.",
-  "type": "object",
-  "properties": {
-    "game_on": {
-      "type": "boolean"
-    },
-    "score": {
-      "type": "array",
-      "items": {
-        "type": "integer"
+  "fields": {
+    "baskets": {
+      "team1": {
+        "bottomLeft": {
+          "x": 109,
+          "y": 239
+        },
+        "bottomRight": {
+          "x": 3,
+          "y": 250
+        },
+        "topLeft": {
+          "x": 4,
+          "y": 104
+        },
+        "topRight": {
+          "x": 113,
+          "y": 105
+        }
+      },
+      "team2": {
+        "bottomLeft": {
+          "x": 515,
+          "y": 260
+        },
+        "bottomRight": {
+          "x": 383,
+          "y": 262
+        },
+        "topLeft": {
+          "x": 383,
+          "y": 108
+        },
+        "topRight": {
+          "x": 517,
+          "y": 99
+        }
       }
     },
-    "time_left": {
-      "type": "number"
-    },
     "field": {
-      "description": "Describes the playing field",
-      "type": "object",
-      "properties": {
-        "top_left": {
-          "$ref": "#/definitions/position"
+      "bottomLeft": {
+        "x": 514,
+        "y": 342
+      },
+      "bottomRight": {
+        "x": 4,
+        "y": 343
+      },
+      "topLeft": {
+        "x": 4,
+        "y": 4
+      },
+      "topRight": {
+        "x": 519,
+        "y": 5
+      }
+    },
+    "zones": {
+      "neutral": {
+        "bottomLeft": {
+          "x": 335,
+          "y": 344
         },
-        "bottom_right": {
-          "$ref": "#/definitions/position"
+        "bottomRight": {
+          "x": 184,
+          "y": 345
         },
-        "baskets": {
-          "type": "array",
-          "items": {
-            "description": "Basket; target area",
-            "type": "object",
-            "properties": {
-              "team": {
-                "type": "integer"
-              },
-              "top_left": {
-                "$ref": "#/definitions/position"
-              },
-              "bottom_right": {
-                "$ref": "#/definitions/position"
-              }
-            },
-            "required": [
-              "top_left",
-              "bottom_right",
-              "team"
-            ]
-          }
+        "topLeft": {
+          "x": 206,
+          "y": 5
         },
-        "apples": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/apple"
-          }
+        "topRight": {
+          "x": 332,
+          "y": 5
         }
       },
-      "required": [
-        "top_left",
-        "bottom_right",
-        "baskets",
-        "apples"
-      ]
-    },
-    "bots": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/bot"
+      "team1": {
+        "bottomLeft": {
+          "x": 185,
+          "y": 342
+        },
+        "bottomRight": {
+          "x": 4,
+          "y": 343
+        },
+        "topLeft": {
+          "x": 8,
+          "y": 8
+        },
+        "topRight": {
+          "x": 207,
+          "y": 6
+        }
       },
-      "uniqueItems": true
+      "team2": {
+        "bottomLeft": {
+          "x": 515,
+          "y": 341
+        },
+        "bottomRight": {
+          "x": 338,
+          "y": 345
+        },
+        "topLeft": {
+          "x": 332,
+          "y": 4
+        },
+        "topRight": {
+          "x": 517,
+          "y": 7
+        }
+      }
     }
   },
-  "definitions": {
-    "position": {
-      "type": "object",
-      "properties": {
-        "x": {
-          "type": "number",
-          "minimum": 0
-        },
-        "y": {
-          "type": "number",
-          "minimum": 0
-        }
+  "gameOn": false,
+  "objects": {
+    "hives": {
+      "24": {
+        "dir": -1.4940244355251187,
+        "type": "HIVE_DISEASED",
+        "x": 895,
+        "y": 658
       },
-      "required": [
-        "x",
-        "y"
-      ]
+      "36": {
+        "dir": 0.43240777557053783,
+        "type": "HIVE_HEALTHY",
+        "x": 918,
+        "y": 600
+      },
+      "40": {
+        "dir": 0.3430239404207034,
+        "type": "HIVE_HEALTHY",
+        "x": 1000,
+        "y": 605
+      },
+      "47": {
+        "dir": 1.642103791580187,
+        "type": "HIVE_HEALTHY",
+        "x": 979,
+        "y": 661
+      }
     },
-    "apple": {
-      "type": "object",
-      "properties": {
-        "color": {
-          "type": "string",
-          "enum": [
-            "red",
-            "brown"
-          ]
-        },
-        "x": {
-          "type": "number",
-          "minimum": 0
-        },
-        "y": {
-          "type": "number",
-          "minimum": 0
-        }
+    "robots": {
+      "0": {
+        "dir": -0.12435499454676144,
+        "x": 767,
+        "y": 623
       },
-      "required": [
-        "color",
-        "x",
-        "y"
-      ]
-    },
-    "bot": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "team": {
-          "type": "integer"
-        },
-        "x": {
-          "type": "number",
-          "minimum": 0
-        },
-        "y": {
-          "type": "number",
-          "minimum": 0
-        },
-        "orientation": {
-          "type": "number",
-          "minimum": 0,
-          "exclusiveMaximum": 360
-        }
+      "12": {
+        "dir": 2.9562447035940984,
+        "x": 703,
+        "y": 665
       },
-      "required": [
-        "id",
-        "team",
-        "x",
-        "y",
-        "orientation"
-      ]
+      "14": {
+        "dir": -2.1763409903998667,
+        "x": 498,
+        "y": 663
+      },
+      "18": {
+        "dir": 0.7419472680059175,
+        "x": 846,
+        "y": 517
+      },
+      "19": {
+        "dir": -1.6373644905707205,
+        "x": 547,
+        "y": 709
+      },
+      "25": {
+        "dir": 0.7419472680059175,
+        "x": 636,
+        "y": 636
+      },
+      "35": {
+        "dir": 1.1659045405098132,
+        "x": 733,
+        "y": 515
+      },
+      "39": {
+        "dir": 2.761086276477428,
+        "x": 475,
+        "y": 709
+      },
+      "44": {
+        "dir": -1.0768549578753155,
+        "x": 566,
+        "y": 577
+      },
+      "5": {
+        "dir": 1.8313987185422376,
+        "x": 590,
+        "y": 668
+      }
     }
   },
-  "required": [
-    "score",
-    "game_on",
-    "time_left",
-    "field",
-    "bots"
-  ]
+  "teams": {
+    "team1": {
+      "id": 0,
+      "name": "Ekipa1",
+      "score": 0
+    },
+    "team2": {
+      "id": 5,
+      "name": "Ekipa2",
+      "score": 0
+    }
+  },
+  "timeLeft": 100
 }
