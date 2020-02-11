@@ -31,7 +31,7 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 | **Kdaj?** | **Kaj?** |
 | --- | --- |
 | 1. 2. 2020 | konec zbiranja prijav |
-| TBA | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
+| 12. 2. 2020 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
 | TBA | uvodna delavnica |
 | TBA | 1. uradni trening (testni poligon) |
 | TBA | 2. uradni trening (testni poligon) |
