@@ -1,3 +1,4 @@
+# ZASTARELO
 Uporaba programa za sledenje
 ================================
 
