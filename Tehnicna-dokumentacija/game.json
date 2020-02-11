@@ -113,7 +113,6 @@
       }
     }
   },
-  "gameOn": false,
   "objects": {
     "hives": {
       "24": {
@@ -206,5 +205,6 @@
       "score": 0
     }
   },
+  "gameOn": false,
   "timeLeft": 100
 }
