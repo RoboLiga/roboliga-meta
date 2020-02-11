@@ -129,4 +129,4 @@ Panji
     }
 ```
 
-Panj je objekt sestavljen iz identifikatorja ArUco, opisa tipa `type`, ki je lahko `HIVE_HEALTHY` za zdrav panj ali `HIVE_DISEASED` za panj z bolanimi čebelami, in pozicije na igralnem polju `x` in 'y' (v milimetrih) ter azimutne orientacije `dir` (v stopinjah) na območju [-180, 180].
+Panj je objekt sestavljen iz identifikatorja ArUco, opisa tipa `type`, ki je lahko `HIVE_HEALTHY` za zdrav panj ali `HIVE_DISEASED` za panj z bolanimi čebelami, in pozicije na igralnem polju `x` in `y` (v milimetrih) ter azimutne orientacije `dir` (v stopinjah) na območju [-180, 180].
