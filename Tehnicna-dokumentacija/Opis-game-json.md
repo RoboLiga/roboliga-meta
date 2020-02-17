@@ -101,11 +101,13 @@ Skladišče je definirano za vsako ekipo in vsebuje štiri točke, ki predstavlj
 Robot
 -----
 ```
-"0": {
+"robots": {
+    "0": {
         "dir": -0.12435499454676144,
         "x": 767,
         "y": 623
-      }
+    }
+}
 ```
 
 Robot je objekt sestavljen iz identifikatorja [ArUco](https://www.uco.es/investiga/grupos/ava/node/26) (zgornji primer za id=0), pozicije na igralnem polju `x` in `y` (v milimetrih) in azimutne orientacije `dir` (v stopinjah) na območju [-180, 180].
