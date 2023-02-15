@@ -1,21 +1,17 @@
 Pravila
 ================================
 
-## Zgodba
-
-(Pretekle dogodivščine Janeza in Franca lahko najdete v [lanskih pravilih](https://github.com/RoboLiga/roboliga-meta/blob/20182019/Pravila.md).)
-
-Prišlo je poletje 2019 in sadovnjaki so samevali. Le redko-katera veja se je šibila pod težo sadja. Roboti so hitro pobrali ubogi pridelek in še  preden bi lahko oče sadovnjak predal enemu od sinov, je k njemu prišla multinacionalka, ki je tam hotela postaviti tovarno. Za kmetijsko zemljišče mu je ponudila trikratnik vrednosti v registru nepremičnin na portalu E-prostor Geodetske uprave Republike Slovenije.
-
-Rešitev je bila sedaj preprosta: vsak od sinov je lahko dobil polovico denarja. Vendar sta kmalu ugotovila, da denar ni vse in da bogastvo s seboj prinese dolžnosti do družbe in socialnega okolja.
-
-Da bi poskrbela, da se podobna katastrofa ne bi pripetila še drugim in bi hkrati očistila svojo vest, ker sta v svojo vas pripeljala velikega onesnaževalca, sta se sinova Janez in Franc odločila, da bosta postala čebelarja. Tako bosta lahko svoje čebele vozila v sadovnjake na pašo, kjer bodo oprašile drevesa, v zameno pa bosta dobila med.
-
-Med je seveda boljši, če ga čebele naberejo na bolj eksotičnih rastlinah, zato sta Janez in Franc naročnike začela iskati čim dlje stran od doma. Ker pa stari oče potrebuje skrb svojih sinov, ne moreta biti dolgo zdoma, zato sta se odločila, da bosta svoje panje naredila samo-vozeče. In tako pomoč spet iščeta pri najboljših izdelovalcih samostojnih robotov - pri vas.
-
 ## Opis izziva
 
-Vsaka ekipa sestavi svojega avtonomnega robota – prenašalca čebeljih panjev. Roboti tekmujejo na poligonu, ki predstavlja polja in sadovnjake. Na njem se nahajajo panji, ki so lahko zdravi ali bolni, in dve skladišči. Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v omejenem času v svoje skladišče prineseta čim več zdravih panjev in poskrbita, da je v njem čim manj bolnih. Robota navigirata po poligonu s pomočjo podatkov, ki jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
+Letošnji izziv postavi robota v vlogo rudarja, ki mora v omejenem času nabrati čim več dragocenega unobtanija in ga pripeljati domov in s tem prinesti zmago svoji ekipi.
+
+Vsaka ekipa sestavi svojega avtonomnega robota – rudarja. Roboti tekmujejo na poligonu, ki predstavlja rudnik unobtainija. V rudniku se nahajajo kosi rude, ki lahko vsebujejo unobtainij ali pa tudi ne.
+
+Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da na svoje odlagališče prineseta čim več unobtainija in poskrbita, da je v njem čim manj jalovine – torej rude brez dragocenega elementa. Robot ugotovi prisotnost elementa v rudi šele, ko naredi podrobno kemično analizo.
+
+Za svoje rudarske aktivnosti ima robot omejeno količino goriva. Svojo zalogo lahko napolni na posebnih površinah polnilne postaje.
+
+Robota navigirata po poligonu s pomočjo podatkov, ki jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
 
 ## Potrebna znanja in veščine
 
@@ -23,88 +19,93 @@ Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja lego k
 
 Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
 
-1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu. Tekmovalci bodo imeli na razpolago podrobno tehnično dokumentacijo in primere programske kode v jeziku Python.
+1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu. Tekmovalci bodo imeli na razpolago podrobno [tehnično dokumentacijo](https://github.com/RoboLiga/roboliga-meta/tree/master/Tehnicna-dokumentacija) in [primere programske kode](https://github.com/RoboLiga/ev3-nabiralec) v jeziku Python.
 2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika.
 
 ## Časovnica
 
 | **Kdaj?** | **Kaj?** |
 | --- | --- |
-| 1. 2. 2020 | konec zbiranja prijav |
-| 12. 2. 2020 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
-| 18. 2. 2020, ob 15h | uvodna delavnica |
-| 5. 3. 2020 | 1. uradni trening (testni poligon) |
-| 30. 9. 2020, 10:00 | 2. uradni trening (testni poligon) |
-| 28. 10. 2020 | zaključno tekmovanje (soba s poligonom in avla FRI) |
+| 19. 2. 2023 | konec zbiranja prijav |
+| 23. 2. 2023 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
+| 3. 3. 2023 | uvodna delavnica |
+| ?. 3. 2023 | 1. uradni trening (testni poligon) |
+| ?. 4. 2023 | 2. uradni trening (testni poligon) |
+| 19. 4. 2023 | zaključno tekmovanje (soba s poligonom in avla FRI) |
 
 ## Sestavni deli izziva
 
 ### Poligon
 
-Poligon je ravno območje, po katerem se lahko gibljejo roboti - prenašalci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta označeni barvni območji, ki predstavljata skladišči, in cone za bogatenje panjev - to so območja z najbolj eksotično pašo za čebele.
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - rudarji. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta z modro oziroma rdečo barvo označeni območji, ki predstavljata odlagališči, in z zeleno barvo polnilne postaje.
 
 - Velikost:  2 m x 3,5 m
 - Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju.
-- Skladišča za panje:
+- Odlagališči rude:
   - postavljeni na robovih poligona
   - modre oziroma rdeče barve
-  - velikost skladišča: približno 1 m x 0,5 m,
+  - velikost skladišča: približno 1 m x 0,5 m
   - štirikotnik, ki definira območje skladišča, je določen v nastavitvah sledilnika.
-- Cone za bogatenje:
-  - obdajajo skladišče na nasprotni strani poligona,
-  - vsak robot ima domačo in nasprotno cono,
-  - modre oziroma rdeče barve.
+- Polnilne postaje:
+  - dve polnilni postaji
+  - vsaka velikosti 0,5 m x 0,5 m
+  - zelene barve.
 
 ![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
 
       
-### Panji
+### Ruda
 
-Na površini poligona se nahajajo panji, ki so predstavljeni z lesenimi kvadri:
+Na površini poligona se nahajajo kosi rude, ki so predstavljeni z lesenimi kvadri:
 
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
-- na vrhu je oznaka za kamero,
-- barva zdravih panjev je zelena, bolnih pa rjava.
+- na vrhu je značka aruco za kamero,
+- kos rude, ki vsebuje unobtainij, je zelene barve, jalovina je rjave barve.
 
-### Robot prenašalec
+### Robot rudar
 
-Nabiralnega robota sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
+Robota rudarja sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
 
 - Robot je lahko izdelan iz kompletov Lego Mindstorms EV3, druge različice niso dovoljene.
 - Izdelan robot lahko vsebuje eno programirljivo kocko, največ tri motorje in največ štiri tipala. Dovoljene vrste tipal so: barvno/svetlobno, ultrazvočno, žiroskop in tipalo za dotik.
 - Največja dovoljena velikost gum je 56 mm x 26 mm.
-- Robot lahko na začetku tekme meri največ 30 cm x 30 cm x 30 cm.
-- Robot mora imeti na vrhu prostor za namestitev označbe, ki bo vidna kameri.
+- Robot lahko na začetku tekme meri največ 50 cm x 50 cm x 50 cm.
+- Robot mora imeti na vrhu prostor za namestitev značke, ki bo vidna kameri.
 - Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
 - Med tekmo lahko robota prime samo sodnik.
 - Hkrati bosta v eni tekmi tekmovala dva robota.
-- Na začetku tekme bodo sodniki postavili prenašalca tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega skladišča, ki gleda proti sredini poligona. Prenašalec bo tako sceloma v svojem skladišču in približno usredinjen glede na daljši rob skladišča.
-- V času tekme je dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
+- Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega odlagališča, ki gleda proti sredini poligona. Robot bo tako sceloma v svojem odlagališču in približno usredinjen glede na daljši rob.
+- V času tekme je robotu dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
 - Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
-Tekma je dvoboj med dvema prenašalcema. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s prenašanjem in vračanjem panjev v svoje skladišče, bolni panji v skladišču pa pomenijo negativne točke.
+Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva z zbiranjem unobtainija na svojem odlagališču, jalovina pa pomeni negativne točke.
 
 - Trajanje tekme: do 3 minute
 - Pridobivanje točk:
-  - vsak zdrav panj, ki se pojavi v košari, nabiralcu prinese točke, odvisno od tega kako deleč je bil,
-    - panj, ki ni bil dlje kot v domači coni je vreden 1 točko
-    - panj, ki je bil izven domače cone, ne pa v nasprotni coni je vreden 2 točki
-    - panj, ki je bil v nasprotni coni je vreden 3 točke
-  - vsak bolan panj v skladišču odšteje 2 točki,
-  - da je panj v skladišču, štejemo takrat, ko je središče njegove oznake znotraj košare,
-  - v primeru, da sledilnik ne prepozna oznake panja, o točkovanju odloča sodnik. Primeri:
-    - panj je prevrnjen in njegova oznaka ni več vidna,
-    - oznaka panja je prekrita z drugim objektom.
-- Zmagovalec je tisti nabiralec, ki ima po izteku časa več točk. V primeru izenačenega števila točk, zmaga tisti, ki ima več zdravih panjev. V primeru, da je tudi število zdravih panjev izenačeno, zmaga tisti, ki je prej v svojo košaro prinesel zadnji zdrav panj.
-- Sodnik sproti odstranjuje zdrave panje iz skladišč, pri čemer bolnih ne in jih lahko robot premika po poligonu do konca tekme.
-- Robotu se je dovoljeno premikati po vsej površini poligona, vključno s skladiščema.
+  - vsak kos rude na odlagališču, ki vsebuje unobtainij, ekipi prinese točko,
+  - vsak kos jalove rude na odlagališču odšteje 2 točki,
+  - podatka o kvaliteti kosa rude robot ne dobi iz strežnika in ga mora pridobiti sam (uporaba barvnega tipala, s poskušanjem)
+  - da je kos rude na odlagališču, štejemo takrat, ko je središče značke znotraj odlagališča,
+  - v primeru, da sledilnik ne prepozna značke rude, o točkovanju odloča sodnik. Primeri:
+    - kos rude je prevrnjen in njegova oznaka ni več vidna,
+    - značka rude je prekrita z drugim objektom.
+- Vloga polnilnih postaj:
+  - robot ima na začetku tekme na voljo dovolj goriva za 25 sekund delovanja,
+  - gorivo si napolni na polnilni postaji,
+  - polnjenje, ki mora trajati vsaj 5 sekund, mu prinese dodatnih 25 sekund,
+  - preostanek časa, ki ga ima robot na voljo, pridobi iz strežnika,
+  - če robotu zmanjka goriva (časa), se ne sme več premikati,
+  - na polnilni postaji se lahko polni največ en robot naenkrat (prvi pride, prvi polni),
+  - ko je robot na polnilni postaji, se količina njegovega goriva ne zmanjšuje.
+- Robotu se je dovoljeno premikati po vsej površini poligona, vključno z odlagališčema.
 - Protokol tekme:
   - priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni položaj. Robota morata biti prižgana in povezana na strežnik.
   - začetek tekme: strežnik oznani začetek tekme z zastavico v podatkih o tekmi.
   - konec tekme: strežnik oznani konec tekme z zastavico v podatkih o tekmi. Možni načini konca tekme:
     - pretek časa,
+    - obema robotoma zmanjka goriva,
     - diskvalifikacija obeh robotov,
     - po presoji sodnika.
 - Če se robot začne premikati pred začetkom tekme, se tekma razveljavi in se vrnemo v pripravo na tekmo. Če robot to stori dvakrat v sklopu iste tekme, je diskvalificiran in tekma se ponovi samo za preostalega robota.
@@ -115,7 +116,6 @@ Predvidoma bo tekmovanje sestavljeno iz dveh delov. V prvem bodo ekipe razdeljen
 
 - Sodnik ima absolutno diskrecijsko pravico.
 - Sodnik lahko prekine tekmo, če presodi, da se stanje točk ne bo spremenilo (npr. oba robota obtičita, se sploh ne odzivata, tekmovalci vdrejo na poligon ipd.).
-- Sodnik lahko na prošnjo člana ekipe premakne njenega robota v začetni položaj (ponastavitev). Vsaka ekipa lahko zaprosi za ponastavitev robota največ 2-krat na tekmo. To stori tako, da član ekipe sodniku zavpije "Reset!". Če sta nabiralca obeh tekmujočih ekip zapletena, sodnik po svoji presoji ponastavi oba robota.
 
 ## Testni poligon
 
