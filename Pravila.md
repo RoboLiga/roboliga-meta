@@ -71,7 +71,7 @@ Robota rudarja sestavite iz kock Lego, ki so prisotne v kompletu, in napišete p
 - Največja dovoljena velikost gum je 56 mm x 26 mm.
 - Robot lahko na začetku tekme meri največ 50 cm x 50 cm x 50 cm.
 - Robot mora imeti na vrhu prostor za namestitev značke, ki bo vidna kameri.
-- Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo podporo za Python.
+- Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo [podporo za Python](https://github.com/RoboLiga/ev3-nabiralec).
 - Med tekmo lahko robota prime samo sodnik.
 - Hkrati bosta v eni tekmi tekmovala dva robota.
 - Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega odlagališča, ki gleda proti sredini poligona. Robot bo tako sceloma v svojem odlagališču in približno usredinjen glede na daljši rob.
