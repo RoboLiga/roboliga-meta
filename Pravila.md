@@ -19,15 +19,15 @@ Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja lego k
 
 Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
 
-1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu. Tekmovalci bodo imeli na razpolago podrobno [tehnično dokumentacijo](https://github.com/RoboLiga/roboliga-meta/tree/master/Tehnicna-dokumentacija) in [primere programske kode](https://github.com/RoboLiga/ev3-nabiralec) v jeziku Python.
-2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika.
+1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu.
+2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika. Tekmovalci bodo imeli na razpolago [primer programske kode](https://github.com/RoboLiga/ev3-nabiralec) v jeziku Python.
 
 ## Časovnica
 
 | **Kdaj?** | **Kaj?** |
 | --- | --- |
 | 26. 2. 2023 | konec zbiranja prijav |
-| 3. 3. 2023 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
+| 3. 3. 2023, 11:00 v P03 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
 | ?. 3. 2023 | uvodna delavnica |
 | ?. 3. 2023 | 1. uradni trening (testni poligon) |
 | ?. 4. 2023 | 2. uradni trening (testni poligon) |
