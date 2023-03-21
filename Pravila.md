@@ -28,8 +28,8 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 | --- | --- |
 | 26. 2. 2023 | konec zbiranja prijav |
 | 3. 3. 2023, 11:00 v P03 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
-| ?. 3. 2023 | uvodna delavnica |
-| ?. 3. 2023 | 1. uradni trening (testni poligon) |
+| 9. 3. 2023, 16:30 | uvodna delavnica (testni poligon)|
+| 31. 3. 2023, 11:00 | 1. uradni trening (testni poligon) |
 | ?. 4. 2023 | 2. uradni trening (testni poligon) |
 | 19. 4. 2023 | zaključno tekmovanje (soba s poligonom in avla FRI) |
 
