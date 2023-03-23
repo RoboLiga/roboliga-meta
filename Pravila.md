@@ -60,7 +60,10 @@ Na površini poligona se nahajajo kosi rude, ki so predstavljeni z lesenimi kvad
 
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 - na vrhu je značka aruco za kamero,
-- kos rude, ki vsebuje unobtainij, je zelene barve, jalovina je rjave barve.
+- kos rude, ki vsebuje unobtainij, je zelene barve, jalovina je rjave barve,
+- strežnik vsakemu kosu rude določi naključno identifikacijsko številko (`id`),
+  - ko se ustvari nova tekma (*Create a new game*) in
+  - ko se tekma prične (*Start the game*).
 
 ### Robot rudar
 
