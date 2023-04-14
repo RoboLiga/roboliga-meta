@@ -98,10 +98,10 @@ Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim ve
   - robot ima na začetku tekme na voljo dovolj goriva za 25 sekund delovanja,
   - gorivo si napolni na polnilni postaji,
   - polnjenje, ki mora trajati vsaj 5 sekund, mu prinese dodatnih 25 sekund,
-  - preostanek časa, ki ga ima robot na voljo, pridobi iz strežnika,
-  - če robotu zmanjka goriva (časa), se ne sme več premikati,
+  - preostanek goriva, ki ga ima robot na voljo, pridobi iz strežnika,
+  - če robotu zmanjka goriva (časa), se do konca tekme ne sme več premikati,
   - na polnilni postaji se lahko polni največ en robot naenkrat (prvi pride, prvi polni),
-  - ko je robot na polnilni postaji, se količina njegovega goriva ne zmanjšuje.
+  - ko je robot na polnilni postaji, se količina njegovega goriva ne zmanjšuje (v primeru, da pride prvi na postajo).
 - Robotu se je dovoljeno premikati po vsej površini poligona, vključno z odlagališčema.
 - Protokol tekme:
   - priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni položaj. Robota morata biti prižgana in povezana na strežnik.
