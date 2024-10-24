@@ -28,7 +28,7 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 | --- | --- |
 | 20. 10. 2024 | konec zbiranja prijav |
 | 25. 10. 2024, 14:30 v R2.38 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
-| XX. 11. 2023, 16:30 | uvodna delavnica (testni poligon)|
+| XX. 11. 2024, 16:30 | uvodna delavnica (testni poligon)|
 | XX. 11. 2024, 11:00 | 1. uradni trening (testni poligon) |
 | XX. 11. 2024, 11:00 | 2. uradni trening (testni poligon) |
 | 5. 12. 2024, 10:00 | zaključno tekmovanje (avla FRI) |
@@ -37,7 +37,7 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 
 ### Poligon
 
-Poligon je ravno območje, po katerem se lahko gibljejo roboti - čistilci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj pa sta z modro oziroma rdečo barvo označeni območji, ki predstavljata odlagališči, in z zeleno barvo bar.
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - čistilci. Sestavljen je iz penastih plošč, ki jih obdaja ograja,znotraj poligona sta na eni strani rdeč in črn koš ter na drugi moder in zelen, ki služita tudi, kot bar.
 
 Velikost: 2 m x 3,5 m
 Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju.
