@@ -51,7 +51,7 @@ Poligon je ravno območje, po katerem se lahko gibljejo roboti - rudarji. Sestav
   - vsaka velikosti 0,5 m x 0,5 m
   - zelene barve.
 
-![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
+![Poligon-plaža](https://github.com/OnlyHans/roboliga-meta/blob/master/poligon.png)
 
       
 ### Ruda
