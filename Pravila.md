@@ -68,7 +68,7 @@ ko se tekma prične (Start the game).
 
 
 
-![Poligon-sadovnjak](https://github.com/RoboLiga/roboliga-meta/raw/master/poligon.jpg)
+![Poligon-plaža](https://github.com/OnlyHans/roboliga-meta/blob/master/poligon.png)
 
       
 ### Ruda
