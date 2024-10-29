@@ -52,7 +52,7 @@ Na površini poligona se nahajajo kosi smeti, ki so predstavljeni z lesenimi kva
 
 velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 na vrhu je značka za kamero,
-Steklenica je zelene barve, Plastika pa rdeče barve,
+Steklenice so zelene barve, Plastika pa rdeče barve,
 strežnik vsakemu kosu smeti določi naključno identifikacijsko številko (id),
 ko se ustvari nova tekma (Create a new game) in
 ko se tekma prične (Start the game).
@@ -66,21 +66,7 @@ strežnik vsaki školjki določi naključno identifikacijsko številko (id),
 ko se ustvari nova tekma (Create a new game) in
 ko se tekma prične (Start the game).
 
-
-
 ![Poligon-plaža](https://github.com/OnlyHans/roboliga-meta/blob/master/poligon.png)
-
-      
-### Ruda
-
-Na površini poligona se nahajajo kosi rude, ki so predstavljeni z lesenimi kvadri:
-
-- velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
-- na vrhu je značka aruco za kamero,
-- kos rude, ki vsebuje unobtainij, je zelene barve, jalovina je rjave barve,
-- strežnik vsakemu kosu rude določi naključno identifikacijsko številko (`id`),
-  - ko se ustvari nova tekma (*Create a new game*) in
-  - ko se tekma prične (*Start the game*).
 
 ### Robot čistilec
 Robota čistilca sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
@@ -90,7 +76,8 @@ Izdelan robot lahko vsebuje eno programirljivo kocko, največ tri motorje in naj
 Največja dovoljena velikost gum je 56 mm x 26 mm.
 Robot lahko na začetku tekme meri največ 50 cm x 50 cm x 50 cm.
 Robot mora imeti na vrhu prostor za namestitev značke, ki bo vidna kameri.
-- Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo [podporo za Python](https://github.com/RoboLiga/ev3-nabiralec).
+Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo [podporo za Python](https://github.com/RoboLiga/ev3-nabiralec).
+
 Med tekmo lahko robota prime samo sodnik.
 Hkrati bosta v eni tekmi tekmovala dva robota.
 Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega koša za plastiko, ki gleda proti sredini poligona. Robot bo tako sceloma v svojem odlagališču.
@@ -99,38 +86,36 @@ Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
-Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s pravilnem recikliranjem, školjke pa pomenijo negativne točke.
+Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s pravilnem recikliranjem, nabiranje školjk pa je kaznovano z negativnimi točkami.
 
 Trajanje tekme: do 3 minute
-Pridobivanje točk:
-  -vsaka smet v pravilnem košu, ekipi prinese točko, če je smet v napačnem košu ne pridobiš     točke,
-  -vsaka školjka na odlagališču odšteje 2 točki.
-  -podatka o vrsti smeti robot ne dobi iz strežnika in ga mora pridobiti sam (uporaba barvnega   tipala, s poskušanjem)
+
+Točkovanje:
+- vsaka smet v pravilnem košu, prinese ekipi dve točki, če je smet v napačnem košu ekipa izgubi eno točko,
+- vsaka školjka kjerkoli na odlagališču pomeni -3 točke za ekipo.
+- podatka o vrsti smeti robot ne dobi iz strežnika in ga mora pridobiti sam (uporaba barvnega   tipala, s poskušanjem)
   da je smet v košu, štejemo takrat, ko je središče značke znotraj odlagališča,
-  v primeru, da sledilnik ne prepozna značke, o točkovanju odloča sodnik. 
-  Primeri:
-    -smet je prevrnjena in njegova oznaka ni več vidna,
-    -značka smeti je prekrita z drugim objektom.
-    -vrsta koša za smeti bo definirana na strežniku.
+  v primeru, da sledilnik ne prepozna značke, o točkovanju odloča sodnik (primeri: smet je prevrnjena in njegova oznaka ni več vidna, značka smeti je prekrita z drugim objektom)
+
 Vloga Bara:
-  -robot ima na začetku tekme na voljo dovolj energije in volje za 25 sekund delovanja,
-  -spočije se v enemu od Barov, ki se nahajajo v koših .
-  -Počitek, ki mora trajati vsaj 5 sekund, mu prinese dodatnih 25 sekund,
-  -preostanek energije, ki jo ima robot na voljo, pridobi iz strežnika,
-  -če robotu zmanjka energije (časa), se do konca tekme ne sme več premikati,
-  -ko je robot na polnilni postaji, se količina njegove energije ne prazni.
-  -Robotu se je dovoljeno premikati po vsej površini poligona, vključno z odlagališčema.
+- robot ima na začetku tekme na voljo dovolj energije in volje za 25 sekund delovanja,
+- spočije se v enemu od Barov, ki se nahajajo na odlagališčih smeti.
+- Počitek, ki mora trajati vsaj 5 sekund, mu prinese dodatnih 25 sekund,
+- preostanek energije, ki jo ima robot na voljo, mu sporoča strežnik,
+- če robotu zmanjka energije (časa), se do konca tekme ne sme več premikati,
+- ko je robot na polnilni postaji, se količina njegove energije ne prazni.
+- Robotu se je dovoljeno premikati po vsej površini poligona, vključno z odlagališčema.
+- V enem baru lahko svojo energijo polni samo en robot naenkrat: tisti, ki je prvi prispel na odlagališče.
+
 Protokol tekme:
-  -priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni     položaj. Robota morata biti prižgana in povezana na strežnik.
-začetek tekme: 
-  -strežnik oznani začetek tekme z zastavico v podatkih o tekmi.
-konec tekme: 
-  -strežnik oznani konec tekme z zastavico v podatkih o tekmi. Možni načini 
-    konca tekme:
-      -pretek časa,
-      -obema robotoma zmanjka energije,
-      -diskvalifikacija obeh robotov, 
-      -po presoji sodnika.
+- Priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni položaj. Robota morata biti prižgana in povezana na strežnik.
+- Začetek tekme: strežnik oznani začetek tekme z zastavico v podatkih o tekmi.
+- Konec tekme: strežnik oznani konec tekme z zastavico v podatkih o tekmi. Možni načini konca tekme:
+  - pretek časa,
+  - obema robotoma zmanjka energije,
+  - diskvalifikacija obeh robotov, 
+  - po presoji sodnika.
+
 Če se robot začne premikati pred začetkom tekme, se tekma razveljavi in se vrnemo v pripravo na tekmo. Če robot to stori dvakrat v sklopu iste tekme, je diskvalificiran in tekma se ponovi samo za preostalega robota.
 Predvidoma bo tekmovanje sestavljeno iz dveh delov. V prvem bodo ekipe razdeljene v skupine, dvoboji pa bodo potekali po načelu vsak z vsakim. Najvišje uvrščene ekipe glede na število točk se potem pomerijo še v izločilnih bojih. Začetni tekmovalni pari izločilnih bojev se določijo glede na izkupiček točk skupinskega dela.
 
