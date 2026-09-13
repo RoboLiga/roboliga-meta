@@ -1,15 +1,19 @@
 Pravila
 ================================
 
-## Opis izziva
+##  Roboliga 2026 - Gradbeno dovoljenje
 
-Letošnji izziv postavlja robota pred izziv čiščenja plaže. Robot mora v omejenem času pravilno reciklirati čim več odpadkov, ki jih najde na plaži, ob tem pa paziti, da ne zagrabi školjk.
+##  Zgodba
 
-Vsaka ekipa sestavi svojega avtonomnega robota – čistilca. Roboti tekmujejo na poligonu, ki predstavlja slovensko plažo. Na plaži se nahajajo odpadki (plastika ali steklo) in školjke.
+Pisalo se je leto 2026, začela se je gradnja kampusa Brdo, ki vključuje novo fakulteto za farmacijo in fakulteto za strojništvo. Gradbena dela so potekala lepo v miru brez problemov ampak kar gradbeniki niso vedeli je, da za kulisjem naravovarstveniki pripravljajo svoj načrt.
+Naravovarstveniki sklepajo, da je gradbeno dovoljenje za novi fakulteti neveljavno pridobljeno in zato so žačeli planirati kako ustaviti gradbenike. Po več dolgih sestankih in tednih planiranja so se končno strinjali. Končna ideja je da bodo poskusili ustaviti promet do gradbišča s tem da posadijo drevesa na pot po kateri vozijo material.
+Sedaj, ko je načrt pripravljen, je naslednji korak, pripraviti drevesa in določiti dan na katerega bodo izvedli akcijo. Odločili so se da bodo napadli na dan 3. decembra 2026. Ali bo gradbenikom še vseeno uspelo dostaviti potreben material na gradbišče ali jih bodo naravovarstveniki uspešno ustavili? Vabljeni, da na ta dan pridete na FRI spremljati kdo bo zmagal to tekmovanje.
 
-Naenkrat tekmujeta dva avtonomna robota, ki imata nalogo, da v svoja koša pravilno reciklirata plastiko ter steklo ob tem pazita, da ne zagrabita školjke. Robot ugotovi, ali je odpadek steklo ali plastika, šele ob podrobni analizi.
+##  Opis izziva
 
-Kot vsakdo se tudi robot med delom utrudi, posledično se mora odpočiti na posebnih poljih, namenjenih počitku.
+Vsaka ekipa sestavi svojega avtonomnega robota, ki bo igral vlogo gradbenika/naravovarstvenika. Roboti tekmujejo na poligonu, ki predstavlja gradbišče. Razpršeno po gradbišču se nahaja gradben material in sicer opeka ter železo. Naravovarstvenik ima svoja drevesa (smreka ter japonska češnja) ob začetku v svoji bazi.
+
+Naenkrat tekmujeta dva avtonomna robota, gradbenik poskuša, gradben material pripeljati v svojo bazo medtem ko naravovarstvenik poskuša posaditi drevesa, da mu blokira pot.
 
 Robota navigirata po poligonu s pomočjo podatkov, ki jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere nameščene nad njim.
 
@@ -17,7 +21,7 @@ Robota navigirata po poligonu s pomočjo podatkov, ki jih preko brezžičnega om
 
 Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja lego kock. Zelo pomemben je občutek za delo v skupini in zagnanost za reševanje novih izzivov.
 
-Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
+Tekmovalci izdelajo programa, ki se izvajata na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
 
 1. Vzpostaviti mora Brezžično (Wi-Fi) povezavo z strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu.
 2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika. Tekmovalci bodo imeli na razpolago [primer programske kode](https://github.com/RoboLiga/ev3-nabiralec) v jeziku Python.
@@ -37,39 +41,37 @@ Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbiraj
 
 ### Poligon
 
-Poligon je ravno območje, po katerem se lahko gibljejo roboti - čistilci. Sestavljen je iz penastih plošč, ki jih obdaja ograja,znotraj poligona sta na eni strani rdeč in črn koš ter na drugi moder in zelen, ki služita tudi, kot bar.
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - čistilci. Sestavljen je iz penastih plošč, ki jih obdaja ograja,znotraj poligona je na eni strani baza gradbenika (rdeča) ter na baza naravovarstvenika (zelena).
 
 Velikost: 2 m x 3,5 m
 Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju.
-koši za smeti:
+Baze:
 postavljeni na nasprotnih straneh poligona
-modre, zelene, rdeče ter črne barve
+rdeče ter zelene barve
 velikost vsakega koša: približno 1 m x 0,5 m
 štirikotnik, ki definira koš za smeti, je določen v nastavitvah sledilnika.
 
-### Smeti
-Na površini poligona se nahajajo kosi smeti, ki so predstavljeni z lesenimi kvadri:
+### Gradbeni material
+Na površini poligona se nahajajo kosi gradbenega materiala, ki so predstavljeni s plastičnimi kvadri:
 
 velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
-na vrhu je značka za kamero,
-Steklenice so zelene barve, Plastika pa rdeče barve,
-strežnik vsakemu kosu smeti določi naključno identifikacijsko številko (id),
+na vrhu je značka za kamero,,
+strežnik vsakemu kosu materiala določi naključno identifikacijsko številko (id),
 ko se ustvari nova tekma (Create a new game) in
 ko se tekma prične (Start the game).
 
-### Školjke
-na površini poligona se nahajajo tudi školjke, ki so predstavljene z lesenimi kvadri.
+### Drevesa
+na površini poligona se nahajajo tudi drevesa, ki so predstavljene s plastičnimi kvadri.
 velikost (D x Š x V): 10 cm x 10 cm x 8 cm
-Školjke so modre barve
 na vrhu je značka za kamero
-strežnik vsaki školjki določi naključno identifikacijsko številko (id),
+strežnik vsakemu drevesu določi naključno identifikacijsko številko (id),
 ko se ustvari nova tekma (Create a new game) in
 ko se tekma prične (Start the game).
 
 ![Poligon-plaža](https://github.com/OnlyHans/roboliga-meta/blob/master/poligon.png)
 
-### Robot čistilec
-Robota čistilca sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
+### Robot
+Robota sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
 
 Robot je lahko izdelan iz kompletov Lego Mindstorms EV3, druge različice niso dovoljene.
 Izdelan robot lahko vsebuje eno programirljivo kocko, največ tri motorje in največ štiri tipala. Dovoljene vrste tipal so: barvno/svetlobno, ultrazvočno, žiroskop in tipalo za dotik.
@@ -80,32 +82,25 @@ Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo [podporo
 
 Med tekmo lahko robota prime samo sodnik.
 Hkrati bosta v eni tekmi tekmovala dva robota.
-Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegovega koša za plastiko, ki gleda proti sredini poligona. Robot bo tako sceloma v svojem odlagališču.
+Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegove baze, ki gleda proti sredini poligona. Robot bo tako sceloma v svoji bazi.
 V času tekme je robotu dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave.
 Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
 
-Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Točke pridobiva s pravilnem recikliranjem, nabiranje školjk pa je kaznovano z negativnimi točkami.
-
+Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik pridobiva točke s tem ,da pripelje gradbeni material do svoje baze, medtem, ko naravovarstvenik dobiva točke s tem, da sadi drevesa. Če gradbenik zaplje čez polje z drevesom se mu odbijajo točke.
 Trajanje tekme: do 3 minute
 
 Točkovanje:
-- vsaka smet v pravilnem košu, prinese ekipi dve točki, če je smet v napačnem košu ekipa izgubi eno točko,
-- vsaka školjka kjerkoli na odlagališču pomeni -3 točke za ekipo.
-- podatka o vrsti smeti robot ne dobi iz strežnika in ga mora pridobiti sam (uporaba barvnega   tipala, s poskušanjem)
-  da je smet v košu, štejemo takrat, ko je središče značke znotraj odlagališča,
-  v primeru, da sledilnik ne prepozna značke, o točkovanju odloča sodnik (primeri: smet je prevrnjena in njegova oznaka ni več vidna, značka smeti je prekrita z drugim objektom)
-
-Vloga Bara:
-- robot ima na začetku tekme na voljo dovolj energije in volje za 25 sekund delovanja,
-- spočije se v enemu od Barov, ki se nahajajo na odlagališčih smeti.
-- Počitek, ki mora trajati vsaj 5 sekund, mu prinese dodatnih 25 sekund,
-- preostanek energije, ki jo ima robot na voljo, mu sporoča strežnik,
-- če robotu zmanjka energije (časa), se do konca tekme ne sme več premikati,
-- ko je robot na polnilni postaji, se količina njegove energije ne prazni.
-- Robotu se je dovoljeno premikati po vsej površini poligona, vključno z odlagališčema.
-- V enem baru lahko svojo energijo polni samo en robot naenkrat: tisti, ki je prvi prispel na odlagališče.
+- Vsaka opeka v košu gradbenika pomeni +2 točki za ekipo gradbenika.
+- Vsako igro je en izmed kosov gradbeneka materiala železo, ki prinese +4 točke za ekipo gradbenika.
+- Vsaka posajena smreka prinese eno točko za ekipo naravovarstvenika.
+- Vsako igro je en izmed dreves japonska češnja, ki prinese dve točki za ekipo naravovarstvenika.
+- Če gradbenik zapelje čez smreko se mu odšteje ena točka, če pa zapelje čez japonsko češnjo pa 2 točki.
+- Da je drevo posajeno, štejemo, ko je na določenem polju vsaj 10 sekund in je središče značke znotraj polja. Drevesa ne moremo posaditi znotraj baze gradbenika/naravovarstvenika.
+- Da je gradbenik, zapeljal čez drevo, štejemo takrat, ko je središče značke znotraj polja.
+- Da je gradben material prisspel v bazo upoštevamo takrat, ko je središče značke znotraj baze. Nato se material odstrani iz poligona.
+- V primeru, da sledilnik ne prepozna značke, o točkovanju odloča sodnik (primeri: gradben material je prevrnjen in njegova oznaka ni več vidna, značka materiala je prekrita z drugim objektom)
 
 Protokol tekme:
 - Priprava na tekmo: tekmovalni ekipi sta povabljeni, da postavita svojega robota na začetni položaj. Robota morata biti prižgana in povezana na strežnik.
@@ -140,4 +135,3 @@ V prostor s poligonom lahko pridete le s posebnim elektronskim ključem. Ključ 
 
 --------------------------
 > Organizatorji si pridržujemo pravico do spremembe in dopolnitve nalog ter tekmovalnih pravil.
-
