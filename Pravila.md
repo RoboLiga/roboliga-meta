@@ -19,12 +19,9 @@ Robota se po poligonu navigirata s pomočjo podatkov, ki jih preko brezžičnega
 
 ## Potrebna znanja in veščine
 
-Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja lego kock. Zelo pomemben je občutek za delo v skupini in zagnanost za reševanje novih izzivov.
+Ekipe potrebujejo osnovno znanje programiranja in veselje do sestavljanja kock Lego. Zelo pomemben je občutek za delo v skupini in zagnanost za reševanje novih izzivov.
 
-Tekmovalci izdelajo program, ki se izvaja na robotu Lego Mindstorms EV3. Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python. Program mora poskrbeti za naslednje naloge:
-
-1. Vzpostaviti mora brezžično (Wi-Fi) povezavo s strežnikom, ki bo robota oskrboval s podatki o dogajanju na poligonu.
-2. Robot mora avtonomno voziti po poligonu, na podlagi podatkov, ki jih bo prejemal s strežnika. Tekmovalci bodo imeli na razpolago [primer programske kode](https://github.com/RoboLiga/ev3-nabiralec) v jeziku Python.
+Tekmovalci izdelajo program, ki se izvaja na robotu, katerega oblikujejo in sestavijo sami iz kompleta [Lego Mindstorms Education EV3 Core Set (45544)](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltd9e811d9ff83b385/5f8801d5887a311d8fa19812/45544_element_survey.pdf?locale=en-us), na katerem je namesto Lego operacijskega sistema naložen operacijski sistem [ev3dev](https://www.ev3dev.org/). Izbirajo lahko med množico programskih jezikov, med katerimi je najbolj priljubljen Python.
 
 ## Časovnica
 
@@ -74,25 +71,35 @@ Na površini poligona se nahajajo tudi drevesa, ki so predstavljena s plastični
 
 ### Robot
 
-Robota sestavite iz kock Lego, ki so prisotne v kompletu, in napišete program, ki se bo izvajal na njem. Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolj prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
+Robot sme biti sestavljen samo iz kock enega kompleta [Lego Mindstorms Education EV3 Core Set (45544)](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltd9e811d9ff83b385/5f8801d5887a311d8fa19812/45544_element_survey.pdf?locale=en-us), ki ga tekmovalci dobijo za izposojo po prijavi. Tekmovalci lahko komplet in robota vzamejo domov.
 
-- Robot je lahko izdelan iz kompletov Lego Mindstorms EV3, druge različice niso dovoljene.
-- Izdelan robot lahko vsebuje eno programirljivo kocko, največ tri motorje in največ štiri tipala. Dovoljene vrste tipal so: barvno/svetlobno, ultrazvočno, žiroskop in tipalo za dotik.
-- Največja dovoljena velikost gum je 56 mm x 26 mm.
-- Robot lahko na začetku tekme meri največ 50 cm x 50 cm x 50 cm.
+Priporočena je uporaba programa za oblikovanje, kot je [BrickLink Studio](https://www.bricklink.com/v3/studio/main.page), ki ga priporoča tudi Lego.
+
+Pri oblikovanju morate biti iznajdljivi, da konstrukcijo robota čim bolje prilagodite izzivu. Ob tem morate upoštevati naslednje omejitve:
+- Robot lahko na začetku tekme meri največ 50 cm × 50 cm × 50 cm.
 - Robot mora imeti na vrhu prostor za namestitev značke, ki bo vidna kameri.
-- Programirate lahko v poljubnem programskem jeziku. Organizatorji nudimo [podporo za Python](https://github.com/RoboLiga/ev3-nabiralec).
 
-Med tekmo lahko robota prime samo sodnik. 
-Hkrati bosta v eni tekmi tekmovala dva robota. 
-Na začetku tekme bodo sodniki postavili robota tako, da bo njegov skrajni sprednji del poravnan s tistim robom njegove baze, ki gleda proti sredini poligona. Robot bo tako v celoti v svoji bazi. 
-V času tekme je robotu dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in ne na druge naprave. 
-Program na robotu lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
+#### Pravila za robote
+- Med tekmo lahko robota prime samo sodnik.
+- Hkrati bosta v eni tekmi tekmovala dva robota.
+- V času tekme je robotu dovoljena povezava izključno na strežnik, ki nudi podatke o tekmi, in na napravo tekmovalcev za nadzor.
+
+### Program
+Program je lahko napisan v [podprtih jezikih](https://www.ev3dev.org/docs/programming-languages/), **ampak** je s strani organizatorjev podprt samo Python.
+
+Organizatorji vzdržujejo [predlogo za Python](https://github.com/RoboLiga/ev3-nabiralec), kjer je pripravljen program za povezovanje na strežnik in nabiranje kock.
+
+V primeru uporabe drugega programskega jezika je treba uporabiti HTTP-odjemalca za povezavo s strežnikom in branje sprejete vsebine.
+
+#### Pravila za program
+- Program med tekmovanjem ne sme biti interaktiven s strani tekmovalcev; dovoljeno je samo samostojno delovanje.
+- V primeru sesutja programa ni dovoljen ponovni zagon programa do naslednjega kroga igre. Dovoljeno je terminiranje programa.
+- Program na robotu med tekmovanjem lahko zaženete preko tipk na kocki ali oddaljeno preko SSH.
 
 ## Tekma
+**Trajanje tekme: do 3 minute**
 
 Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik pridobiva točke s tem, da pripelje gradbeni material do svoje baze, medtem ko naravovarstvenik dobiva točke s tem, da sadi drevesa. Če gradbenik zapelje čez polje z drevesom, se mu odbijajo točke. 
-Trajanje tekme: do 3 minute
 
 Točkovanje:
 - Vsaka opeka v košu gradbenika pomeni +2 točki za ekipo gradbenika.
@@ -110,7 +117,6 @@ Protokol tekme:
 - Začetek tekme: strežnik oznani začetek tekme z zastavico v podatkih o tekmi.
 - Konec tekme: strežnik oznani konec tekme z zastavico v podatkih o tekmi. Možni načini konca tekme:
   - pretek časa,
-  - obema robotoma zmanjka energije,
   - diskvalifikacija obeh robotov,
   - po presoji sodnika.
 
