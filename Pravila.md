@@ -13,7 +13,7 @@ Zdaj, ko je načrt pripravljen, je naslednji korak pripraviti drevesa in določi
 
 Vsaka ekipa sestavi svojega avtonomnega robota, ki bo igral vlogo gradbenika/naravovarstvenika. Roboti tekmujejo na poligonu, ki predstavlja gradbišče. Razpršeno po gradbišču se nahaja gradbeni material, in sicer opeka ter železo. Naravovarstvenik ima svoja drevesa (smreka ter japonska češnja) ob začetku v svoji bazi.
 
-Naenkrat tekmujeta dva avtonomna robota. Gradbenik poskuša gradbeni material pripeljati v svojo bazo, medtem ko naravovarstvenik poskuša posaditi drevesa, da mu blokira pot.
+Naenkrat tekmujeta dva avtonomna robota. Gradbenik poskuša gradbeni material pripeljati v svojo bazo - gradbišče, medtem ko naravovarstvenik poskuša posaditi drevesa, da mu blokira pot.
 
 Robota se po poligonu navigirata s pomočjo podatkov, ki jih preko brezžičnega omrežja pridobita s strežnika. Slednji budno spremlja dogajanje na poligonu s pomočjo kamere, nameščene nad njim.
 
@@ -38,15 +38,14 @@ Tekmovalci izdelajo program, ki se izvaja na robotu, katerega oblikujejo in sest
 
 ### Poligon
 
-Poligon je ravno območje, po katerem se lahko gibljejo roboti – čistilci. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj poligona pa je na eni strani baza gradbenika (rdeča) ter baza naravovarstvenika (zelena).
+Poligon je ravno območje, po katerem se lahko gibljejo roboti - gradbinci in naravovarstveniki. Sestavljen je iz penastih plošč, ki jih obdaja ograja, znotraj poligona pa je na eni strani baza gradbenika (rdeča) ter baza naravovarstvenika (zelena).
 
 Velikost: 2 m x 3,5 m 
 Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju. 
 Baze:
 - postavljeni na nasprotnih straneh poligona,
 - rdeče ter zelene barve,
-- velikost vsakega koša: približno 1 m x 0,5 m,
-- štirikotnik, ki definira koš za smeti, je določen v nastavitvah sledilnika.
+- velikost baz: približno 1 m x 0,5 m,
 
 ### Gradbeni material
 
@@ -102,14 +101,14 @@ V primeru uporabe drugega programskega jezika je treba uporabiti HTTP-odjemalca 
 Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik pridobiva točke s tem, da pripelje gradbeni material do svoje baze, medtem ko naravovarstvenik dobiva točke s tem, da sadi drevesa. Če gradbenik zapelje čez polje z drevesom, se mu odbijajo točke. 
 
 Točkovanje:
-- Vsaka opeka v košu gradbenika pomeni +2 točki za ekipo gradbenika.
-- Vsako igro je eden izmed kosov gradbenega materiala železo, ki prinese +4 točke za ekipo gradbenika.
-- Vsaka posajena smreka prinese eno točko za ekipo naravovarstvenika.
-- Vsako igro je eno izmed dreves japonska češnja, ki prinese dve točki za ekipo naravovarstvenika.
+- Vsaka opeka v košu gradbenika pomeni 2 točki za ekipo gradbenika.
+- Vsako igro je eden izmed kosov gradbenega materiala železo, ki prinese 4 točke gradbeniku.
+- Vsaka posajena smreka prinese 1 točko naravovarstveniku.
+- Eno izmed dreves japonska češnja, ki prinese 2 točki za ekipo naravovarstvenika.
 - Če gradbenik zapelje čez smreko, se mu odšteje ena točka, če pa zapelje čez japonsko češnjo, pa 2 točki.
-- Da je drevo posajeno, štejemo, ko je na določenem polju vsaj 10 sekund in je središče značke znotraj polja. Drevesa ne moremo posaditi znotraj baze gradbenika/naravovarstvenika.
+- Da je drevo posajeno, štejemo, ko je na določenem polju vsaj 5 sekund in je središče značke znotraj polja. Drevesa ne moremo posaditi znotraj baze gradbenika/naravovarstvenika.
 - Da je gradbenik zapeljal čez drevo, štejemo takrat, ko je središče značke znotraj polja.
-- Da je gradbeni material prispel v bazo, upoštevamo takrat, ko je središče značke znotraj baze. Nato se material odstrani iz poligona.
+- Da je gradbeni material prispel v bazo, upoštevamo takrat, ko je središče značke znotraj baze. Točke se prištejejo takoj in ostanejo, ne glede na to, ali je kasneje material izrinjen iz baze.
 - V primeru, da sledilnik ne prepozna značke, o točkovanju odloča sodnik (primeri: gradbeni material je prevrnjen in njegova oznaka ni več vidna, značka materiala je prekrita z drugim objektom).
 
 Protokol tekme:
