@@ -1,13 +1,14 @@
 Pravila
 ================================
 
-## Roboliga 2026 – gradbeno dovoljenje
+## Roboliga 2026 – Gradbišče
 
 ## Zgodba
 
-Pisalo se je leto 2026, začela se je gradnja kampusa Brdo, ki vključuje novo fakulteto za farmacijo in fakulteto za strojništvo. Gradbena dela so potekala lepo v miru brez problemov, ampak česar gradbeniki niso vedeli, je, da naravovarstveniki za kulisami pripravljajo svoj načrt.
-Naravovarstveniki sklepajo, da je gradbeno dovoljenje za novi fakulteti neveljavno pridobljeno, zato so začeli načrtovati, kako ustaviti gradbenike. Po več dolgih sestankih in tednih planiranja so se končno strinjali. Končna ideja je, da bodo poskusili ustaviti promet do gradbišča tako, da posadijo drevesa na pot, po kateri vozijo material.
-Zdaj, ko je načrt pripravljen, je naslednji korak pripraviti drevesa in določiti dan, na katerega bodo izvedli akcijo. Odločili so se, da bodo napadli 3. decembra 2026. Ali bo gradbenikom kljub temu uspelo dostaviti potreben material na gradbišče ali jih bodo naravovarstveniki uspešno ustavili? Vabljeni, da na ta dan pridete na FRI spremljat, kdo bo zmagal to tekmovanje.
+Pisalo se je leto 2026. Začela se je gradnja kampusa Brdo, ki vključuje novo Fakulteto za farmacijo in Fakulteto za strojništvo. Gradbena dela so potekala mirno in brez težav, česar pa gradbeniki niso vedeli, je bilo, da naravovarstveniki za kulisami pripravljajo svoj načrt.
+Naravovarstvenike je izredno zbodlo, koliko travnatih površin se uniči za »betonski gozd«, zato so začeli načrtovati, kako bi ustavili gradbenike. Po številnih dolgih sestankih in tednih načrtovanja je prišlo do prelomnice. Vohun, ki so ga poslali med gradbenike, je poročal, da gradbeniki razvijajo avtonomne robote, ki bodo dostavljali gradbeni material na gradbišče.
+Naravovarstveniki so se takoj lotili načrtovanja lastnih robotov. Kako jih ustaviti, je bilo očitno: njihovi roboti bodo na pot, po kateri vozijo roboti gradbenikov, posadili drevesa in jih tako dokončno ustavili.
+Za napad so izbrali 3. december 2026. Bo gradbenikom kljub temu uspelo dostaviti potrebni material na gradbišče ali jih bodo naravovarstveniki ustavili? Vabljeni, da ta dan pridete na FRI in si ogledate, kdo bo zmagal.
 
 ## Opis izziva
 
