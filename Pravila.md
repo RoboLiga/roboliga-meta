@@ -63,7 +63,7 @@ Na poligonu so tudi drevesa, ki jih prav tako predstavljajo plastični kvadri:
 - ko se ustvari nova tekma (Create a new game) in
 - ko se tekma prične (Start the game).
 
-![Poligon-gradbišče](https://github.com/RoboLiga/roboliga-meta/blob/dev/26/poligon.png)
+![Poligon-gradbišče](./poligon.jpg)
 
 ### Robot
 
