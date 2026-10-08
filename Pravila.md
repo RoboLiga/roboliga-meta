@@ -34,14 +34,15 @@ Tekmovalci napišejo program, ki teče na robotu. Robota sami oblikujejo in sest
 
 ### Poligon
 
-Poligon je ravna površina, po kateri se gibljejo roboti -- gradbeniki in naravovarstveniki. Sestavljen je iz penastih plošč in obdan z ograjo. Na nasprotnih straneh poligona sta bazi gradbenika (rdeča) in naravovarstvenika (zelena). Poligon je razdeljen na polja (posamezne penaste plošče, velikosti približno 0,5 m x 0,5 m).
+Poligon je ravna površina, po kateri se gibljejo roboti -- gradbeniki in naravovarstveniki. Sestavljen je iz penastih plošč in obdan z ograjo. Na nasprotnih straneh poligona sta bazi gradbenika (rdeča) in naravovarstvenika (zelena). Poligon je razdeljen na polja (posamezne penaste plošče, velikosti približno 0,5 m x 0,5 m), ki definirajo območja, kjer so drevesa posajena.
 
 Velikost: 2 m x 3,5 m 
 Obdaja ga ograja iz pleksi stekla – ograja ni trdna in ni namenjena zaletavanju. 
+
 Bazi:
 - postavljeni na nasprotnih straneh poligona,
 - rdeče in zelene barve,
-- velikost izhodišč: približno 1 m x 0,5 m,
+- velikost izhodišč: približno 1 m x 0,5 m.
 
 ![Poligon-gradbišče](./poligon.jpg)
 
@@ -67,29 +68,23 @@ Na poligonu so tudi drevesa, ki jih prav tako predstavljajo plastični kvadri:
 ### Robot
 
 Robot sme biti sestavljen samo iz kock enega kompleta [Lego Mindstorms Education EV3 Core Set (45544)](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltd9e811d9ff83b385/5f8801d5887a311d8fa19812/45544_element_survey.pdf?locale=en-us), ki si ga tekmovalci po prijavi izposodijo. Komplet in robota lahko vzamejo domov.
-
 Za oblikovanje svetujemo uporabo programa, kot je [BrickLink Studio](https://www.bricklink.com/v3/studio/main.page), ki ga priporoča tudi Lego.
 
 Pri oblikovanju bodite iznajdljivi in konstrukcijo robota čim bolje prilagodite izzivu. Upoštevati morate naslednji omejitvi:
 - Robot sme na začetku tekme meriti največ 50 cm × 50 cm × 50 cm.
 - Robot mora imeti na vrhu prostor za namestitev značke, ki bo vidna kameri.
 
-#### Pravila za robote
-- Med tekmo sme robota prijeti samo sodnik.
-- V eni tekmi hkrati tekmujeta dva robota.
-- Med tekmo se sme robot povezati izključno s strežnikom, ki posreduje podatke o tekmi.
+### Program na robotu
 
-### Program
-Program je lahko napisan v [podprtih jezikih](https://www.ev3dev.org/docs/programming-languages/), **vendar** organizatorji podpiramo samo Python.
-
+Program je lahko napisan v [podprtih jezikih](https://www.ev3dev.org/docs/programming-languages/), vendar organizatorji podpiramo samo Python.
 Organizatorji vzdržujemo [predlogo za Python](https://github.com/RoboLiga/ev3-nabiralec), ki vsebuje program za povezovanje s strežnikom in pobiranje kock.
-
 Če uporabljate drug programski jezik, za povezavo s strežnikom in branje prejetih podatkov potrebujete odjemalca HTTP.
 
-#### Pravila za program
+#### Pravila za robote
 
+- Med tekmo se sme robot povezati izključno s strežnikom, ki posreduje podatke o tekmi.
 - Tekmovalci med tekmovanjem ne smejo posegati v delovanje programa; robot mora delovati samostojno.
-- Če se program sesuje, ga do naslednjega kroga ni dovoljeno ponovno zagnati. Program je dovoljeno ustaviti.
+- Če se program na robotu sesuje, ga do naslednjega teka ni dovoljeno ponovno zagnati. Program je dovoljeno ustaviti.
 - Program lahko med tekmovanjem zaženete s tipkami na kocki ali na daljavo prek SSH.
 
 ## Tekma
@@ -97,7 +92,7 @@ Organizatorji vzdržujemo [predlogo za Python](https://github.com/RoboLiga/ev3-n
 
 Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik dobi točke, ko pripelje gradbeni material v svojo bazo, naravovarstvenik pa, ko posadi drevo. Če gradbenik zapelje čez polje z drevesom, izgubi točke.
 
-Točkovanje:
+**Točkovanje:**
 - Vsaka opeka v bazi gradbenika prinese ekipi gradbenika 2 točki.
 - V vsaki igri je en kos gradbenega materiala železo, ki gradbeniku prinese 4 točke.
 - Vsaka posajena smreka prinese naravovarstveniku 1 točko.
@@ -109,7 +104,7 @@ Točkovanje:
 - Gradbeni material velja za dostavljen v bazo, ko je središče njegove značke znotraj baze. Točke se prištejejo takoj in ostanejo, tudi če je material pozneje izrinjen iz baze. Ponovno dostavljen material ne prinese dodatnih točk.
 - Če sledilnik značke ne prepozna, o točkah odloči sodnik (npr. če se gradbeni material prevrne in njegova značka ni več vidna ali če značko materiala prekrije drug predmet).
 
-Protokol tekme:
+**Protokol tekme:**
 - Znotraj tekme se izvedeta dva teka: najprej ena ekipa prevzame vlogo gradbenika, druga pa naravovarstvenika, nato se vlogi ekip zamenjata.
 - Priprava na tekmo: tekmovalni ekipi postavita svoja robota na začetna položaja. Robota morata biti prižgana in povezana s strežnikom.
 - Začetek tekme: strežnik začetek tekme sporoči z zastavico v podatkih o tekmi.
@@ -122,7 +117,7 @@ Protokol tekme:
 Tekmovanje bo predvidoma potekalo v dveh delih. V skupinskem delu bodo ekipe razdeljene v skupine, v katerih se bo pomerila vsaka z vsako. Ekipe z največ točkami se nato pomerijo še v izločilnih dvobojih. Pari za prvi krog izločilnih dvobojev se določijo glede na izkupiček točk iz skupinskega dela.
 
 ## Sodnik
-
+- Med tekmo sme robota prijeti samo sodnik.
 - Sodnik ima popolno diskrecijsko pravico.
 - Sodnik lahko tekmo prekine, če presodi, da se stanje točk ne bo več spremenilo (npr. če oba robota obtičita ali se ne odzivata, če tekmovalci posežejo na poligon ipd.).
 
