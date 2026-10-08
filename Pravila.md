@@ -1,5 +1,4 @@
-## Roboliga 2026 – Gradbišče
-================================
+![banner](./banner.png)
 
 ## Zgodba
 
@@ -44,6 +43,8 @@ Bazi:
 - rdeče in zelene barve,
 - velikost izhodišč: približno 1 m x 0,5 m,
 
+![Poligon-gradbišče](./poligon.jpg)
+
 ### Gradbeni material
 
 Na poligonu so kosi gradbenega materiala, ki jih predstavljajo plastični kvadri:
@@ -62,8 +63,6 @@ Na poligonu so tudi drevesa, ki jih prav tako predstavljajo plastični kvadri:
 - strežnik vsakemu drevesu določi naključno identifikacijsko številko (id),
 - ko se ustvari nova tekma (Create a new game) in
 - ko se tekma prične (Start the game).
-
-![Poligon-gradbišče](./poligon.jpg)
 
 ### Robot
 
