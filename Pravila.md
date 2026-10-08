@@ -24,12 +24,12 @@ Tekmovalci napišejo program, ki teče na robotu. Robota sami oblikujejo in sest
 
 | **Kdaj?** | **Kaj?** |
 | --- | --- |
-| 20. 10. 2026 | konec zbiranja prijav |
-| 25. 10. 2026, 14:30 v R2.38 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
-| XX. 11. 2026, 16:30 | uvodna delavnica (testni poligon) |
-| XX. 11. 2026, 11:00 | 1. uradni trening (testni poligon) |
-| XX. 11. 2026, 11:00 | 2. uradni trening (testni poligon) |
-| 5. 12. 2026, 10:00 | zaključno tekmovanje (avla FRI) |
+| 18. 10. 2026 | konec zbiranja prijav |
+| 22. 10. 2026, 14:30 v R2.38 | prvo srečanje s prijavljenimi ekipami (predstavitev izziva, razdelitev kompletov) |
+| 29. 10. 2026, 16:30 | uvodna delavnica (testni poligon)|
+| 12. 11. 2026, 11:00 | 1. uradni trening (testni poligon) |
+| 26. 11. 2026, 11:00 | 2. uradni trening (testni poligon) |
+| 3. 12. 2026, 10:00 | zaključno tekmovanje (avla FRI) | 
 
 ## Sestavni deli izziva
 
