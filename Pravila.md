@@ -1,5 +1,4 @@
-## Roboliga 2026 – Gradbišče
-================================
+![banner](https://github.com/RoboLiga/roboliga-meta/blob/dev/26/banner.png)
 
 ## Zgodba
 
