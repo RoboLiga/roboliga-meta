@@ -2,16 +2,17 @@
 
 ## Zgodba
 
-Pisalo se je leto 2026. Začela se je gradnja kampusa Brdo, ki vključuje novo Fakulteto za farmacijo in Fakulteto za strojništvo. Gradbena dela so potekala mirno in brez težav, česar pa gradbeniki niso vedeli, je bilo, da naravovarstveniki za kulisami pripravljajo svoj načrt.
-Naravovarstvenike je izredno zbodlo, koliko travnatih površin se uniči za »betonski gozd«, zato so začeli načrtovati, kako bi ustavili gradbenike. Po številnih dolgih sestankih in tednih načrtovanja je prišlo do prelomnice. Vohun, ki so ga poslali med gradbenike, je poročal, da gradbeniki razvijajo avtonomne robote, ki bodo dostavljali gradbeni material na gradbišče.
-Naravovarstveniki so se takoj lotili načrtovanja lastnih robotov. Kako jih ustaviti, je bilo očitno: njihovi roboti bodo na pot, po kateri vozijo roboti gradbenikov, posadili drevesa in jih tako dokončno ustavili.
-Za napad so izbrali 3. december 2026. Bo gradbenikom kljub temu uspelo dostaviti potrebni material na gradbišče ali jih bodo naravovarstveniki ustavili? Vabljeni, da ta dan pridete na FRI in si ogledate, kdo bo zmagal.
+Pisalo se je leto 2026. Začela se je gradnja nove soseske. Naročnik si je zastavil jasen cilj: soseska naj bo sodobna, hkrati pa zelena in prijazna do okolja. Zato na gradbišču ob gradbenikih delajo tudi naravovarstveniki, ki skrbijo, da se za vsak kos pozidane površine posadi novo drevje.
+
+Ker je rok kratek, sta obe ekipi delo zaupali avtonomnim robotom. Gradbeniški roboti po gradbišču zbirajo opeke in železo ter jih vozijo v gradbeno bazo, naravovarstveniški roboti pa sadijo drevesa, ki bodo nekoč dajala senco prebivalcem. Zaplet je le v tem, da je gradbišče majhno, drevesa pa rastejo prav tam, kjer vozijo gradbeniški roboti. Gradbenik mora tako spretno iskati pot med vedno več drevesi, naravovarstvenik pa mora v omejenem času zasaditi čim več zelenja.
+
+Končni pregled del je napovedan za 3. december 2026. Bo gradbenikom uspelo pravočasno dostaviti ves material? Bodo naravovarstveniki zasadili dovolj dreves? Vabljeni, da ta dan pridete na FRI in si ogledate, kateri robot se bo bolje znašel.
 
 ## Opis izziva
 
-Vsaka ekipa sestavi svojega avtonomnega robota, ki bo igral vlogo gradbenika ali naravovarstvenika. Roboti tekmujejo na poligonu, ki predstavlja gradbišče. Po gradbišču je razpršen gradbeni material, in sicer opeke in železo. Naenkrat tekmujeta dva avtonomna robota gradbenik in naravovarstvenik. Slednji ima na začetku tekme v svojem izhodišču drevesa. Na drugi strani poligona se nahaja gradbena baza, kamor poskuša Gradbenik pripeljati razpršeni gradbeni material, medtem ko naravovarstvenik po poligonu sadi drevesa, s katerimi mu zapira pot.
+Vsaka ekipa sestavi svojega avtonomnega robota, ki bo igral vlogo gradbenika ali naravovarstvenika. Roboti tekmujejo na poligonu, ki predstavlja gradbišče. Po gradbišču je razpršen gradbeni material, in sicer opeke in železo. Naenkrat tekmujeta dva avtonomna robota gradbenik in naravovarstvenik. Slednji ima na začetku tekme v svojem izhodišču drevesa. Na drugi strani poligona se nahaja gradbena baza, kamor poskuša Gradbenik pripeljati razpršeni gradbeni material, medtem ko naravovarstvenik po poligonu sadi drevesa. Gradbenik mora spretno iskato pravilno pot, da ne zadane kakšnega drevesa.
 
-Robota se po poligonu orientirata na podlagi podatkov, ki jih prek brezžičnega omrežja prejemata s strežnika. Strežnik dogajanje na poligonu budno spremlja s kamero, nameščeno nad njim.
+Robota se po poligonu orientirata na podlagi podatkov, ki jih prek brezžičnega omrežja prejemata s strežnika. Strežnik dogajanje na poligonu budno spremlja s kamero, nameščeno nad njim. 
 
 ## Potrebna znanja in veščine
 
