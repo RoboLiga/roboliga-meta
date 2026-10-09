@@ -4,7 +4,7 @@
 
 Pisalo se je leto 2026. Začela se je gradnja nove soseske. Naročnik si je zastavil jasen cilj: soseska naj bo sodobna, hkrati pa zelena in prijazna do okolja. Zato na gradbišču ob gradbenikih delajo tudi naravovarstveniki, ki skrbijo, da se za vsak kos pozidane površine posadi novo drevje.
 
-Ker je rok kratek, sta obe ekipi delo zaupali avtonomnim robotom. Gradbeniški roboti po gradbišču zbirajo opeke in železo ter jih vozijo v gradbeno bazo, naravovarstveniški roboti pa sadijo drevesa, ki bodo nekoč dajala senco prebivalcem. Zaplet je le v tem, da je gradbišče majhno, drevesa pa rastejo prav tam, kjer vozijo gradbeniški roboti. Gradbenik mora tako spretno iskati pot med vedno več drevesi, naravovarstvenik pa mora v omejenem času zasaditi čim več zelenja.
+Ker je rok kratek, sta obe ekipi delo zaupali avtonomnim robotom. Roboti gradbeniki zbirajo opeke in železo ter jih vozijo v gradbeno bazo, roboti naravovarstveniki pa sadijo drevesa, ki bodo nekoč dajala senco prebivalcem. Zaplet je le v tem, da je gradbišče majhno, drevesa pa rastejo prav tam, kjer vozijo gradbeniški roboti. Gradbenik mora tako spretno iskati pot med vedno več drevesi, naravovarstvenik pa mora v omejenem času zasaditi čim več zelenja.
 
 Končni pregled del je napovedan za 3. december 2026. Bo gradbenikom uspelo pravočasno dostaviti ves material? Bodo naravovarstveniki zasadili dovolj dreves? Vabljeni, da ta dan pridete na FRI in si ogledate, kateri robot se bo bolje znašel.
 
