@@ -53,18 +53,14 @@ Na poligonu so kosi gradbenega materiala, ki jih predstavljajo plastični kvadri
 
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 - na vrhu je značka za kamero,
-- strežnik vsakemu kosu materiala določi naključno identifikacijsko številko (id),
-- ko se ustvari nova tekma (Create a new game) in
-- ko se tekma prične (Start the game).
+- strežnik za vsak kos materiala sporoči njegovo vrsto (opeka ali železo).
 
 ### Drevesa
 
 Na poligonu so tudi drevesa, ki jih prav tako predstavljajo plastični kvadri:
 - velikost (D x Š x V): 10 cm x 10 cm x 8 cm,
 - na vrhu je značka za kamero,
-- strežnik vsakemu drevesu določi naključno identifikacijsko številko (id),
-- ko se ustvari nova tekma (Create a new game) in
-- ko se tekma prične (Start the game).
+- strežnik za vsako drevo sporoči njegovo vrsto (smreka ali japonska češnja).
 
 ### Robot
 
