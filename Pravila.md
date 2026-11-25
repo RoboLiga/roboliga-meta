@@ -91,17 +91,18 @@ Organizatorji vzdržujemo [predlogo za Python](https://github.com/RoboLiga/ev3-n
 ## Tekma
 **Trajanje tekme: največ 3 minute**
 
-Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik dobi točke, ko pripelje gradbeni material v svojo bazo, naravovarstvenik pa, ko posadi drevo. Če gradbenik zapelje čez polje z drevesom, izgubi točke.
+Tekma je dvoboj med dvema robotoma. Njun cilj je v omejenem času zbrati čim več točk. Gradbenik dobi točke, ko pripelje gradbeni material v svojo bazo, naravovarstvenik pa, ko posadi drevo. Če gradbenik zapelje čez polje s posajenim drevesom, izgubi točke.
 
 **Točkovanje:**
 - Vsaka opeka v bazi gradbenika prinese ekipi gradbenika 2 točki.
 - V vsaki igri je en kos gradbenega materiala železo, ki gradbeniku prinese 4 točke.
 - Vsaka posajena smreka prinese naravovarstveniku 1 točko.
 - Eno izmed dreves je japonska češnja, ki ekipi naravovarstvenika prinese 2 točki.
-- Če gradbenik zapelje čez smreko, se mu odšteje 1 točka, če zapelje čez japonsko češnjo, pa 2 točki.
+- Če gradbenik zapelje čez posajeno smreko, se mu odšteje 1 točka, če zapelje čez posajeno japonsko češnjo, pa 2 točki.
 - Drevo velja za posajeno, ko je vsaj 5 sekund na istem polju in je središče njegove značke znotraj polja. Drevesa ni mogoče posaditi v bazi gradbenika ali naravovarstvenika.
 - Že posajeno drevo se lahko presadi na drugo polje, vendar presajanje ne prinese dodatnih točk naravovarstveniku.
-- Šteje se, da je gradbenik zapeljal čez drevo, ko je središče njegove značke znotraj polja z drevesom.
+- Na vsakem polju je lahko posajeno le eno drevo. Drevesa na polju čakajo v vrsti po vrstnem redu prihoda in čas se meri le prvemu. Ko prvo drevo zapusti polje, se začne meriti čas naslednjemu. Če gradbenik zapelje čez posajeno drevo, to ostane prvo v vrsti in se mu čas meri znova.
+- Šteje se, da je gradbenik zapeljal čez drevo, ko je središče njegove značke znotraj polja s posajenim drevesom. Drevo, ki še ni posajeno (na polju je manj kot 5 sekund), gradbeniku ne odšteje točk. Točke se odštejejo ob vstopu na polje. Povoženo drevo ni več posajeno, dokler na polju ne ostane spet vsaj 5 sekund.
 - Gradbeni material velja za dostavljen v bazo, ko je središče njegove značke znotraj baze. Točke se prištejejo takoj in ostanejo, tudi če je material pozneje izrinjen iz baze. Ponovno dostavljen material ne prinese dodatnih točk.
 - Če sledilnik značke ne prepozna, o točkah odloči sodnik (npr. če se gradbeni material prevrne in njegova značka ni več vidna ali če značko materiala prekrije drug predmet).
 
